@@ -12,5 +12,6 @@ export const icons = {
 }
 
 export const socialLinks = {
-	youtube: "https://www.youtube.com/"
+	youtube: "https://www.youtube.com/",
+	instagram: ""
 }
