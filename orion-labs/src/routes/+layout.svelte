@@ -1,3 +1,6 @@
+<script lang="js">
+	import Header from '$lib/components/Header.svelte';
+</script>
 <style lang="css">
 	:root {
 
@@ -12,8 +15,17 @@
 			--highlight-color: null;
 
 	}
-	body {
-			background: url("/ed-get-a-cool-img-plz");
 
-	}
+
 </style>
+<header>
+	<Header />
+</header>
+
+<main>
+	<slot />
+</main>
+
+<footer>
+<p>ball</p>
+</footer>
