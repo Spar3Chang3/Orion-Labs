@@ -7,8 +7,9 @@ export function openNewTab(url) {
 }
 
 export const icons = {
-	sus: "/assets/sus.svg",
-
+	sus: "/icons/sus.svg",
+	orionLogo: "/brand/orion-lab-logo.svg",
+	orionIcon: "/brand/orion-lab-icon.svg"
 }
 
 export const socialLinks = {

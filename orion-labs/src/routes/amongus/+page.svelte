@@ -1,5 +1,5 @@
 <script>
-	import sus from '../../../static/sus.svg';
+	import sus from '../../../static/icons/sus.svg';
 	let title = "AMOGUS";
 
 </script>
