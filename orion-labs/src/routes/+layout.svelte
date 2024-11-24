@@ -1,6 +1,10 @@
 <script lang="js">
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+
 </script>
+
+
 <style lang="css">
 	:global(body) {
 			margin: 0;
@@ -56,6 +60,6 @@
 	</main>
 
 	<footer>
-		<p>pebis balls</p>
+		<Footer />
 	</footer>
 </div>

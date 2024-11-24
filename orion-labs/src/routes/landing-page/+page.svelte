@@ -1,10 +1,14 @@
 <!-- src/App.svelte -->
 <script>
+    import Slideshow from '$lib/components/Slideshow.svelte';
     let features = [
         { title: "Real-time Collaboration", description: "Work together seamlessly, no matter where you are." },
         { title: "AI-Powered Insights", description: "Get actionable insights powered by advanced AI." },
         { title: "Secure Communication", description: "Your data is safe with end-to-end encryption." },
     ];
+
+    const galleryID = "landing-slide-show";
+    const directoryURL = "/images/landing-page/slideshow";
 </script>
 
 <style>
@@ -16,10 +20,10 @@
         color: white;
     }
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
+    /*h1 {*/
+    /*    font-size: 3rem;*/
+    /*    margin-bottom: 1rem;*/
+    /*}*/
 
     .feature {
         margin: 2rem 0;
@@ -30,9 +34,6 @@
 </style>
 
 <main>
-    <header>
-
-    </header>
 
     <section>
         {#each features as feature}
@@ -43,7 +44,7 @@
         {/each}
     </section>
 
-    <footer>
-        <p>© 2024 Orion Labs. All rights reserved.</p>
-    </footer>
+    <section>
+        <Slideshow galleryID={galleryID} directoryURL={directoryURL} imageNumber={4}/>
+    </section>
 </main>

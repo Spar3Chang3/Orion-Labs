@@ -16,3 +16,8 @@ export const socialLinks = {
 	youtube: "https://www.youtube.com/",
 	instagram: ""
 }
+export const UISLinks = {
+	UIS: "https://www.uis.edu",
+	CSClub: "",
+	OrionLab: "https://www.uis.edu/orion-lab",
+}
