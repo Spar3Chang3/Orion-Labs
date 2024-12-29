@@ -1,2 +1,3 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<meta http-equiv="Refresh" content="0;/landing-page">
+<title>Connecting to page</title>
+<p>One moment please...</p>
