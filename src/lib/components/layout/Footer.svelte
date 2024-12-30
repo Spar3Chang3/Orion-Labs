@@ -11,7 +11,7 @@
 				display: grid;
 				grid-template-columns: 66% 33%;
 				grid-template-rows: 1fr;
-				height: 15vh;
+				height: 10vh;
 				width: 100vw;
 
 				background-color: white;
@@ -47,8 +47,8 @@
 	}
 
 	.social-shelf a {
-			height: 9vh;
-			width: 9vw;
+			height: 8vh;
+			width: 8vw;
 	}
 
 	.social-shelf a > img {

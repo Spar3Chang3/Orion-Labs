@@ -14,11 +14,10 @@
 			grid-template-rows: 1fr;
 
 			min-height: 30px;
-			height: 15vh;
+			height: 10vh;
 			/*min-height: 53px;*/
 			width: 100vw;
       background-color: white;
-
 	}
 
 	.img-container {
@@ -27,11 +26,13 @@
 			width: 100%;
 			justify-content: center;
 			align-items: center;
+			padding: 10px;
+			object-fit: contain;
 	}
 
 	.img-container img {
-			height: clamp(25px, 12vh, 12vh);
-			width: auto;
+			height: clamp(25px, 9vh, 9vh);
+			width: 90%;
 			object-fit: contain;
 	}
 
@@ -40,7 +41,7 @@
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-template-rows: auto;
 
-      height: 15vh;
+      height: 10vh;
 			width: 100%;
   }
 
@@ -70,11 +71,11 @@
 
 	@keyframes glitch {
       0% {
-          text-shadow: -4px 6px 0 #0073e6, 4px -6px 0 #003366;
+          text-shadow: -4px 6px 0 var(--banner-accent), 4px -6px 0 var(--banner-standard);
           transform: translateY(-0.5rem);
       }
       20% {
-          text-shadow: 4px -6px 0 #0073e6, -4px 6px 0 #003366;
+          text-shadow: 4px -6px 0 var(--banner-standard), -4px 6px 0 var(--banner-accent);
       }
       30%, 100% {  text-shadow: none; transform: none; }
 	}
