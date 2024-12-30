@@ -9,19 +9,22 @@
 
 		.footer {
 				display: grid;
-				grid-template-columns: 66% 33%;
+				grid-template-columns: 66% 34%;
 				grid-template-rows: 1fr;
-				height: 10vh;
+				min-height: 50px;
+				max-height: 10vh;
 				width: 100vw;
 
 				background-color: white;
 				font-family: Hacked, sans-serif;
-				border-top: 0.1rem solid #1a1a1a;
+				border-top: 0.1vh solid #1a1a1a;
 		}
 
 	.copyright {
 			display: flex;
 			flex-direction: column;
+      min-height: 50px;
+			max-height: 10vh;
 
 			justify-content: center;
 			align-items: flex-start;
@@ -39,7 +42,8 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr;
-			height: 100%;
+			height: 10vh;
+      min-height: 50px;
 			width: 100%;
 
 			justify-content: center;
@@ -47,8 +51,8 @@
 	}
 
 	.social-shelf a {
-			height: 8vh;
-			width: 8vw;
+			height: 6vh;
+			width: 6vw;
 	}
 
 	.social-shelf a > img {
@@ -66,8 +70,7 @@
 
 <section class="footer">
 	<div class="copyright">
-		<p>© 2024 Orion Labs - All Rights Thought About</p>
-		<p>This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
+		<p>© 2024 Orion Labs - All Rights Thought About <br>This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
 	</div>
 	<div class="social-shelf">
 

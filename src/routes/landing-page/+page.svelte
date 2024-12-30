@@ -22,13 +22,20 @@
         height: fit-content;
         width: 100%;
 
-        padding: 0.5rem;
-        background-color: grey;
+        flex-wrap: wrap;
+        background-color: var(--banner-standard);
+        color: whitesmoke;
+        font-family: sans-serif;
+        line-height: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .intro h2, .intro p {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+
+
+    .intro p, h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .promotion-video {

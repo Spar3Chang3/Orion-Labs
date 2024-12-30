@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Welcome to the code zone. Code inside...">
-      <change afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/3d-print-broll.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/people-broll.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/teaching-broll.mp4" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Add promotional videos">
+      <change afterPath="$PROJECT_DIR$/src/routes/fortnite/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/fortnite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/sus.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/sus.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sus/susquared/+page.svelte" beforeDir="false" />
     </list>
     <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin" />
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,10 +51,48 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Spar3Chang3/Orion-Labs.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Spar3Chang3/Orion-Labs&quot;,
     &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/lib/index.js">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="4" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="12" end1="12" start2="12" end2="13" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/lib/components/layout/Header.svelte">
+      <ranges>
+        <range start1="12" end1="13" start2="12" end2="13" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="15" end1="18" start2="15" end2="18" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="20" end1="20" start2="20" end2="21" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="28" end1="29" start2="29" end2="30" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="40" end1="42" start2="41" end2="43" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="45" end1="45" start2="46" end2="47" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="51" end1="51" start2="53" end2="54" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="92" end1="94" start2="95" end2="97" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="12" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="13" end1="14" start2="13" end2="15" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="18" end1="19" start2="19" end2="20" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="24" end1="24" start2="25" end2="27" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="41" end1="42" start2="44" end2="46" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="49" end1="51" start2="53" end2="55" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="68" end1="70" start2="72" end2="73" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/routes/landing-page/+page.svelte">
+      <ranges>
+        <range start1="24" end1="26" start2="24" end2="31" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="27" end1="27" start2="32" end2="34" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="28" end1="31" start2="35" end2="38" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -59,21 +103,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/trash/WebstormProjects/Orion-Labs/static/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Development\\Editors\\JetBrains\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/static/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Development\\Editors\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
@@ -87,7 +132,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
       </set>
     </attachedChunks>
   </component>
@@ -101,6 +146,8 @@
       <updated>1735465547933</updated>
       <workItem from="1735465549267" duration="2298000" />
       <workItem from="1735511458842" duration="14109000" />
+      <workItem from="1735539407317" duration="6000" />
+      <workItem from="1735540187063" duration="5329000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -126,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735517577235</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add promotional videos">
+      <option name="closed" value="true" />
+      <created>1735538635322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735538635322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +203,7 @@
     <MESSAGE value="Add the smallest thing to README.md" />
     <MESSAGE value="Welcome to the code zone. Code inside..." />
     <MESSAGE value="Changes by Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by Admin" />
+    <MESSAGE value="Add promotional videos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add promotional videos" />
   </component>
 </project>

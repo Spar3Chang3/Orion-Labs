@@ -26,6 +26,8 @@
         --background-standard: ;
         --banner-standard: #003366;
         --banner-accent: #0073e6;
+
+        overflow-x: hidden;
     }
 
     :global(html, body) {
@@ -33,9 +35,8 @@
     }
 
     main {
-        min-height: 70vh;
+        min-height: 79.8vh;
         max-height: fit-content;
-        overflow-x: hidden;
     }
 
 </style>

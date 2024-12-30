@@ -1,7 +1,7 @@
 export const SiteLinks = {
 	landingPage: '/landing-page',
 	sus: '/sus',
-	susquared: '/sus/susquared',
+	fortnite: '/fortnite',
 	about: '/about',
 	staff: '/staff'
 
@@ -10,6 +10,7 @@ export const SiteLinks = {
 export const IconLinks = {
 	github: '/assets/github-logo.svg',
 	discord: '/assets/discord-logo.svg',
+	fortnite: '/assets/fortnite.jpg'
 }
 
 export const SocialLinks = {

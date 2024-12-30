@@ -10,14 +10,15 @@
 
 	.navbar {
 			display: grid;
-			grid-template-columns: 33% 66%;
+			grid-template-columns: 34% 66%;
 			grid-template-rows: 1fr;
 
-			min-height: 30px;
-			height: 10vh;
-			/*min-height: 53px;*/
+			min-height: 50px;
+			max-height: 10vh;
+
 			width: 100vw;
       background-color: white;
+			border-bottom: 0.1vh solid #1a1a1a;
 	}
 
 	.img-container {
@@ -26,7 +27,7 @@
 			width: 100%;
 			justify-content: center;
 			align-items: center;
-			padding: 10px;
+			padding: 0 10px 10px 10px;
 			object-fit: contain;
 	}
 
@@ -38,17 +39,19 @@
 
   .navigation {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-template-rows: auto;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      grid-template-rows: 1fr;
 
       height: 10vh;
 			width: 100%;
+      flex-grow: 1;
   }
 
 	.navigation a {
 			display: flex;
 			height: 100%;
 			width: 100%;
+
 
 			justify-content: center;
 			align-items: center;
@@ -90,7 +93,7 @@
 	</div>
 	<div class="navigation">
 		<a href={SiteLinks.about}>About Us</a>
-		<a href={SiteLinks.sus}>amogus</a>
-		<a href={SiteLinks.susquared}>amogus ඞ</a>
+		<a href={SiteLinks.sus}>amogus ඞ</a>
+		<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
 	</div>
 </section>
