@@ -1,5 +1,5 @@
 <script lang="js">
-	import { SocialLinks } from '$lib/index.js';
+	import { SocialLinks, IconLinks } from '$lib/index.js';
 
 	let {isMobile = false} = $props();
 
@@ -9,22 +9,57 @@
 
 		.footer {
 				display: grid;
-				grid-template-columns: 33% 66%;
+				grid-template-columns: 66% 33%;
 				grid-template-rows: 1fr;
 				height: 15vh;
 				width: 100vw;
 
-				background-color: grey;
+				background-color: white;
+				font-family: Hacked, sans-serif;
+				border-top: 0.1rem solid #1a1a1a;
 		}
 
 	.copyright {
-			font-size: .7rem;
-			color: darkgray;
+			display: flex;
+			flex-direction: column;
+
+			justify-content: center;
+			align-items: flex-start;
+
+			font-size: 1rem;
+			color: grey;
 			padding-left: 1rem;
 	}
 	.copyright a {
 			text-decoration: none;
-			color: gray;
+			color: rebeccapurple;
+	}
+
+	.social-shelf {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			height: 100%;
+			width: 100%;
+
+			justify-content: center;
+			align-items: center;
+	}
+
+	.social-shelf a {
+			height: 9vh;
+			width: 9vw;
+	}
+
+	.social-shelf a > img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+			transition: 100ms ease;
+	}
+
+	.social-shelf a > img:hover {
+			transform: scale(1.1);
 	}
 
 </style>
@@ -36,5 +71,12 @@
 	</div>
 	<div class="social-shelf">
 
+		<a href={SocialLinks.github} target="_blank">
+			<img src={IconLinks.github} alt="Github Logo"/>
+		</a>
+
+		<a href={SocialLinks.discord} target="_blank">
+			<img src={IconLinks.discord} alt="Discord Logo"/>
+		</a>
 	</div>
 </section>

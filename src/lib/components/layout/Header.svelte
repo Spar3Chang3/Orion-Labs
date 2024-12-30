@@ -13,35 +13,72 @@
 			grid-template-columns: 33% 66%;
 			grid-template-rows: 1fr;
 
+			min-height: 30px;
 			height: 15vh;
+			/*min-height: 53px;*/
 			width: 100vw;
-      background-color: grey;
+      background-color: white;
 
 	}
+
 	.img-container {
-			max-height: 12vh;
-			padding: 10px;
-	}
-
-	.img-container > a > img {
+			display: flex;
 			height: 100%;
 			width: 100%;
+			justify-content: center;
+			align-items: center;
+	}
+
+	.img-container img {
+			height: clamp(25px, 12vh, 12vh);
+			width: auto;
 			object-fit: contain;
 	}
-	.nav-item {
+
+  .navigation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: auto;
+
+      height: 15vh;
+			width: 100%;
+  }
+
+	.navigation a {
 			display: flex;
-			flex-direction: row;
 			height: 100%;
 			width: 100%;
-			text-decoration: none;
+
 			justify-content: center;
 			align-items: center;
 
-	}
-	.nav-item a {
+			font-family: Hacked, sans-serif;
+			font-size: clamp(0.5rem, 2rem, 3rem);
 			text-decoration: none;
-      color: black;
+			color: #1a1a1a;
 	}
+
+	.navigation a:hover {
+			animation: 1s glitch;
+	}
+
+	/*
+		TODO:
+		Add a glitch effect that looks like this: https://codepen.io/aldrie/pen/PojGYLo
+		Currently, only stole the keyframes code for one part lmao, needs work
+	*/
+
+	@keyframes glitch {
+      0% {
+          text-shadow: -4px 6px 0 #0073e6, 4px -6px 0 #003366;
+          transform: translateY(-0.5rem);
+      }
+      20% {
+          text-shadow: 4px -6px 0 #0073e6, -4px 6px 0 #003366;
+      }
+      30%, 100% {  text-shadow: none; transform: none; }
+	}
+
 </style>
 
 <section class="navbar">
@@ -51,8 +88,8 @@
 		</a>
 	</div>
 	<div class="navigation">
-		<div class="nav-item">
-			<p><a href={SiteLinks.sus}> amogus</a></p>
-		</div>
+		<a href={SiteLinks.about}>About Us</a>
+		<a href={SiteLinks.sus}>amogus</a>
+		<a href={SiteLinks.susquared}>amogus ඞ</a>
 	</div>
 </section>

@@ -7,7 +7,8 @@ export const SiteLinks = {
 }
 
 export const IconLinks = {
-
+	github: '/assets/github-logo.svg',
+	discord: '/assets/discord-logo.svg',
 }
 
 export const SocialLinks = {

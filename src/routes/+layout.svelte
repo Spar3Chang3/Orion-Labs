@@ -13,6 +13,19 @@
 </script>
 
 <style lang="css">
+
+    @font-face {
+        font-family: "Hacked";
+        src: url("/fonts/cringe.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    :root {
+        --background-standard: ;
+    }
+
     :global(html, body) {
         margin: 0;
     }

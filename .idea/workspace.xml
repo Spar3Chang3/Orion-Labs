@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Nuke bad first attempt">
-      <change afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/OrionLabLogo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/among-us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/favicon.svg" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Welcome to the code zone. Code inside...">
+      <change afterPath="$PROJECT_DIR$/static/assets/discord-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/github-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/cringe.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
     </list>
-    <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+    <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin">
       <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
     </list>
     <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,19 +52,18 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/lib/components/layout/Header.svelte">
       <ranges>
-        <range start1="0" end1="1" start2="0" end2="14" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
-        <range start1="2" end1="2" start2="15" end2="18" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
-        <range start1="3" end1="3" start2="19" end2="44" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
-        <range start1="5" end1="8" start2="46" end2="57" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
-        <range start1="9" end1="9" start2="58" end2="59" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/routes/landing-page/+page.svelte">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="0" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="2" end1="3" start2="1" end2="3" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="6" end1="7" start2="6" end2="7" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
-        <range start1="9" end1="9" start2="9" end2="12" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="15" end1="15" start2="15" end2="16" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="16" end1="16" start2="17" end2="18" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="17" end1="18" start2="19" end2="20" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="20" end1="20" start2="22" end2="23" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="21" end1="23" start2="24" end2="29" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="25" end1="28" start2="31" end2="34" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="30" end1="34" start2="36" end2="43" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="35" end1="36" start2="44" end2="51" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="39" end1="41" start2="54" end2="56" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="42" end1="43" start2="57" end2="58" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="44" end1="44" start2="59" end2="81" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="53" end1="56" start2="90" end2="93" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
       </ranges>
     </file>
   </component>
@@ -102,6 +97,7 @@
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\fonts" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
@@ -122,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735465547933</updated>
       <workItem from="1735465549267" duration="2298000" />
-      <workItem from="1735511458842" duration="5591000" />
+      <workItem from="1735511458842" duration="14109000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -140,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735466071805</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Welcome to the code zone. Code inside...">
+      <option name="closed" value="true" />
+      <created>1735517577235</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735517577235</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +164,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nuke bad first attempt" />
     <MESSAGE value="Add the smallest thing to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the smallest thing to README.md" />
+    <MESSAGE value="Welcome to the code zone. Code inside..." />
+    <MESSAGE value="Changes by Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Admin" />
   </component>
 </project>
