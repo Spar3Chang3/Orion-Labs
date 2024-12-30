@@ -1,12 +1,15 @@
-
 <script lang="js">
-
+    import { onMount } from 'svelte';
+    let {isMobile} = $props();
 </script>
 <style lang="css">
     .land-page {
-        height: 100vh;
+        height: 100%;
         background-color: lightgray;
         }
+    p {
+        padding: .5rem;
+    }
 </style>
 
 <section class="land-page">

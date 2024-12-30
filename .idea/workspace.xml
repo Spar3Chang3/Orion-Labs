@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Nuke bad first attempt">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/OrionLabLogo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/among-us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/favicon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
     </list>
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="">
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
     </list>
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,32 +31,51 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="+page" />
-        <option value="+layout" />
         <option value="Header" />
         <option value="Footer" />
+        <option value="+layout" />
+        <option value="+page" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Spar3Chang3"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Spar3Chang3&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Spar3Chang3/Orion-Labs",
+    "url": "https://github.com/Spar3Chang3/Orion-Labs.git",
     "accountId": "7398f066-a024-4eda-a6df-e25fa531bd3e"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/lib/components/layout/Header.svelte">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="14" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="2" end1="2" start2="15" end2="18" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="3" end1="3" start2="19" end2="44" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="5" end1="8" start2="46" end2="57" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="9" end1="9" start2="58" end2="59" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/routes/landing-page/+page.svelte">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="0" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="2" end1="3" start2="1" end2="3" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="6" end1="7" start2="6" end2="7" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+        <range start1="9" end1="9" start2="9" end2="12" changelist="c2b43348-d6f6-4440-ad92-89cd90b6bd01" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2qsyOUegIkhRBcN4eBLw6pn5Kpw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -59,20 +86,30 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/static/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Development\\Editors\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Development\\Editors\\JetBrains\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
       </set>
     </attachedChunks>
   </component>
@@ -85,6 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735465547933</updated>
       <workItem from="1735465549267" duration="2298000" />
+      <workItem from="1735511458842" duration="5591000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
