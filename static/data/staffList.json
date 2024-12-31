@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Daryk",
+    "role": "Lead Developer",
+    "bio": "Failed College Student",
+    "portrait": "/data/Daryk.jpg"
+  },
+  {
+    "name": "Edward",
+    "role": "Co-Developer",
+    "bio": "Successful College Student",
+    "portrait": "/data/Edward.jpg"
+  }
+]

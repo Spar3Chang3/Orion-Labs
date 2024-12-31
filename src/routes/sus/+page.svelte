@@ -1,20 +1,52 @@
 <script lang="js">
 	import { onMount } from 'svelte';
+	import confetti from 'canvas-confetti';
 
-	let x = $state(0);
-	let y = $state(0);
+	let mouseX = $state(0);
+	let mouseY = $state(0);
+
+	let transX = $state(0);
+	let transY = $state(0);
+
+	let yippee = $state();
+	let sus = $state();
+
+	function getRandomInt(min, max) {
+		if (min >= max) {
+			return 8008135;
+		}
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	function handleMouseMove(e) {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+	}
+
+	function handleSusClick(e) {
+		yippee.play();
+		confetti({
+			origin: {
+				x: e.clientX / window.innerWidth,
+				y: e.clientY / window.innerHeight
+			}
+		});
+	}
 
 	onMount(() => {
-		const handleMouseMove = (event) => {
-			x = event.pageX;
-			y = event.pageY;
-		};
 
 		window.addEventListener('mousemove', handleMouseMove);
 
-		let sus = new Audio("/assets/sus.mp3");
+		transX = getRandomInt(0, 90);
+		transY = getRandomInt(0, 70);
+
+		sus = new Audio("/assets/sus.mp3");
 		sus.volume = 0.35;
+		sus.loop = true;
 		sus.play();
+
+		yippee = new Audio("/assets/yippee.mp3");
+
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMove);
 			sus.pause();
@@ -24,40 +56,57 @@
 </script>
 
 <style lang="css">
-    body {
-        margin: 0;
-        padding: 0;
-    }
     section {
         position: relative;
         width: 100%;
         height: 79.8vh;
-        background-image: url('/assets/sus.png');
         background-size: contain;
 				background-repeat: no-repeat;
         overflow: hidden;
     }
+		.find-me {
+				position: absolute;
+		}
+
+		.find-me img {
+				position: relative;
+				height: 5vh;
+				width: 5vw;
+				object-fit: contain;
+		}
+
     .overlay {
+				display: none;
         background: #000;
         width: 100%;
         height: 79.8vh;
     }
     .light {
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
     }
 
-    .overlay {
-        display: none;
-    }
+		.clickable {
+				position: fixed;
+				z-index: 10;
 
-    .light {
-        background: radial-gradient(circle at 0 0, transparent, #000 30%);
-    }
+				height: 5vh;
+				width: 5vw;
+
+				background: transparent;
+				border: none;
+				cursor: pointer;
+		}
 </style>
 
 <section class="sus">
-	<div class="light" style={`background: radial-gradient(circle at ${x}px ${y}px, transparent, #000 30%)`}></div>
+	<div class="find-me" style:transform="translate({transX}vw, {transY}vh)">
+		<img src="/assets/sus.png" alt="Sussy Baka"/>
+	</div>
+	<!-- Gradient refuses to origin at mouse point and starts the circumference instead. I'm not smart enough to figure out the problem (probably the header) so I just added an offset -->
+	<div class="light" style:background="radial-gradient(circle 6vh at {mouseX}px calc({mouseY}px - 10vh), transparent, #000)"></div>
 	<div class="overlay"></div>
+	<button class="clickable" onclick={handleSusClick} style:transform="translate({transX}vw, {transY}vh)" aria-label="Ghost Button">
+	</button>
 </section>

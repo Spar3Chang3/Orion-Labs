@@ -21,7 +21,7 @@
 			border-bottom: 0.1vh solid #1a1a1a;
 	}
 
-	.img-container {
+	.portrait-container {
 			display: flex;
 			height: 100%;
 			width: 100%;
@@ -31,7 +31,7 @@
 			object-fit: contain;
 	}
 
-	.img-container img {
+	.portrait-container img {
 			height: clamp(25px, 9vh, 9vh);
 			width: 90%;
 			object-fit: contain;
@@ -86,13 +86,14 @@
 </style>
 
 <section class="navbar">
-	<div class="img-container">
+	<div class="portrait-container">
 		<a href={SiteLinks.landingPage} >
 		<img src="/assets/OrionLabLogo.svg" alt="Orion Labs Logo">
 		</a>
 	</div>
 	<div class="navigation">
 		<a href={SiteLinks.about}>About Us</a>
+		<a href={SiteLinks.staff}>Staff</a>
 		<a href={SiteLinks.sus}>amogus ඞ</a>
 		<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
 	</div>

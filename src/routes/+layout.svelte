@@ -45,7 +45,11 @@
     <Header {isMobile}/>
 </header>
 <main>
-    {@render children({ isMobile })}
+    {#if children}
+        {@render children({ isMobile })}
+    {:else}
+        <p>502</p>
+    {/if}
 </main>
 <footer>
     <Footer {isMobile}/>

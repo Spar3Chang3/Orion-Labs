@@ -10,6 +10,7 @@ export const SiteLinks = {
 export const IconLinks = {
 	github: '/assets/github-logo.svg',
 	discord: '/assets/discord-logo.svg',
+	sus: '/assets/sus.png',
 	fortnite: '/assets/fortnite.jpg'
 }
 
@@ -24,5 +25,9 @@ export const VideoLinks = {
 	printer: '/assets/3d-print-broll.mp4',
 	people: '/assets/people-broll.mp4',
 	teaching: '/assets/teaching-broll.mp4'
+}
 
+//The links in here are majorly temporary
+export const DataLinks = {
+	staff: '/data/staffList.json'
 }
