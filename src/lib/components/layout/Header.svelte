@@ -7,6 +7,21 @@
 </script>
 
 <style lang="css">
+    @media (prefers-color-scheme: dark) {
+				.navbar.adaptive {
+            background-color: black;
+            border-bottom: 0.1vh solid #F0F0F0;
+				}
+				.navbar.adaptive a {
+            color: white;
+				}
+				.portrait-container.adaptive a img{
+						/*Maybe not...*/
+						filter: invert(100%);
+        }
+
+
+    }
 
 	.navbar {
 			display: grid;
@@ -85,8 +100,8 @@
 
 </style>
 
-<section class="navbar">
-	<div class="portrait-container">
+<section class="navbar adaptive">
+	<div class="portrait-container adaptive">
 		<a href={SiteLinks.landingPage} >
 		<img src="/assets/OrionLabLogo.svg" alt="Orion Labs Logo">
 		</a>

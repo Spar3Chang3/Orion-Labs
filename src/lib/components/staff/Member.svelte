@@ -5,6 +5,9 @@
 </script>
 
 <style lang="css">
+    @media (prefers-color-scheme: dark) {
+
+    }
 	.member {
 			display: grid;
 			grid-template-columns: auto;

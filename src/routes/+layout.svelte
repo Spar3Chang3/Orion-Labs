@@ -38,13 +38,21 @@
         min-height: 79.8vh;
         max-height: fit-content;
     }
+    @media (prefers-color-scheme: dark) {
+        main.adaptive {
+            background-color: #2B2B2B;
+            /*--banner-standard: #003366; should these be changed? Why are they root variables? Is that the right way to do it?*/
+            /*--banner-accent: #0073e6;*/
+        }
+    }
+
 
 </style>
 
 <header>
     <Header {isMobile}/>
 </header>
-<main>
+<main class="adaptive">
     {#if children}
         {@render children({ isMobile })}
     {:else}

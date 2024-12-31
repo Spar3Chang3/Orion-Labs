@@ -4,24 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="That's sus bro">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/yippee.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/Daryk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/Edward.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/staffList.json" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Sus that baka and add to staff.svelte">
+      <change afterPath="$PROJECT_DIR$/static/assets/google-maps-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/uis-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+    </list>
+    <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin" />
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
     </list>
-    <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin" />
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +54,27 @@
     &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/routes/landing-page/+page.svelte">
+      <ranges>
+        <range start1="17" end1="18" start2="17" end2="18" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="35" end1="36" start2="35" end2="36" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="56" end1="57" start2="56" end2="57" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="73" end1="73" start2="73" end2="74" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="109" end1="109" start2="110" end2="115" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte">
+      <ranges>
+        <range start1="9" end1="16" start2="9" end2="40" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="17" end1="21" start2="41" end2="45" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="42" end1="43" start2="66" end2="67" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="70" end1="72" start2="94" end2="96" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="74" end1="75" start2="98" end2="99" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="83" end1="83" start2="107" end2="115" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -86,8 +107,8 @@
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\data" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\data" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\fonts" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
@@ -113,7 +134,7 @@
       <workItem from="1735540187063" duration="5466000" />
       <workItem from="1735578959457" duration="10272000" />
       <workItem from="1735618585178" duration="2086000" />
-      <workItem from="1735627284109" duration="4357000" />
+      <workItem from="1735627284109" duration="8457000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -155,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735545648612</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Sus that baka and add to staff.svelte">
+      <option name="closed" value="true" />
+      <created>1735635328974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735635328974</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +208,7 @@
     <MESSAGE value="Add promotional videos" />
     <MESSAGE value="That's sus bro" />
     <MESSAGE value="Add the smallest thing to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the smallest thing to README.md" />
+    <MESSAGE value="Sus that baka and add to staff.svelte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sus that baka and add to staff.svelte" />
   </component>
 </project>

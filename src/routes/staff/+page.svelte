@@ -22,6 +22,7 @@
 </script>
 
 <style lang="css">
+
 	.staff {
 			display: flex;
 			flex-direction: row;

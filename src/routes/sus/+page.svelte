@@ -56,6 +56,13 @@
 </script>
 
 <style lang="css">
+    @media (prefers-color-scheme: dark) {
+
+    }
+		.sus {
+				/*Force light background for the sanctity of the effect in dark mode.*/
+				background-color: #FFFFFF;
+		}
     section {
         position: relative;
         width: 100%;

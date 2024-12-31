@@ -15,7 +15,7 @@
         align-items: center;
     }
 
-    .intro {
+    .intro, .outro {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -33,7 +33,7 @@
 
 
 
-    .intro p, h2 {
+    .intro p, h2, .outro p, h2 {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -54,7 +54,7 @@
         width: 100%;
 
         object-fit: cover;
-        z-index: -1;
+        z-index: 1;
     }
 
     .promotion-text {
@@ -71,6 +71,7 @@
         font-size: 4rem;
         color: whitesmoke;
         text-shadow: 2px 2px 4px var(--banner-accent);
+        z-index: 2;
     }
 
 </style>
@@ -106,5 +107,10 @@
         <div class="promotion-text">
             <p>Actual Answers</p>
         </div>
+    </div>
+
+    <div class="outro">
+        <h2>Visit Us</h2>
+        <p>Even if you don't want to officially join, drop by and say hi. You might just walk away with a better day</p>
     </div>
 </section>

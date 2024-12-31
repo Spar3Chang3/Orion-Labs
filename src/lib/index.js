@@ -10,6 +10,8 @@ export const SiteLinks = {
 export const IconLinks = {
 	github: '/assets/github-logo.svg',
 	discord: '/assets/discord-logo.svg',
+	gmaps: '/assets/google-maps-logo.svg',
+	uis: '/assets/uis-logo.svg',
 	sus: '/assets/sus.png',
 	fortnite: '/assets/fortnite.jpg'
 }
@@ -17,6 +19,7 @@ export const IconLinks = {
 export const SocialLinks = {
 	github: 'https://github.com/Spar3Chang3/Orion-Labs',
 	discord: 'https://discord.gg/VWD7BqWNES',
+	gmaps: "https://maps.app.goo.gl/xUCqoXGYanU2MZr29",
 	uishome: 'https://uis.edu',
 
 }
