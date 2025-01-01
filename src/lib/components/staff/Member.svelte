@@ -5,9 +5,6 @@
 </script>
 
 <style lang="css">
-    @media (prefers-color-scheme: dark) {
-
-    }
 	.member {
 			display: grid;
 			grid-template-columns: auto;
@@ -21,6 +18,7 @@
 			align-items: center;
 
 			background-color: var(--banner-standard);
+			border: 0.1rem solid var(--banner-accent);
 			color: whitesmoke;
 			font-family: Roboto, sans-serif;
 			padding: 1rem;

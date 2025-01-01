@@ -18,7 +18,10 @@ export const IconLinks = {
 	},
 	discord: '/assets/discord-logo.svg',
 	gmaps: '/assets/google-maps-logo.svg',
-	uis: '/assets/uis-logo.svg',
+	uis: {
+		light: '/assets/uis-logo-light.svg',
+		dark: '/assets/uis-logo-dark.svg'
+	},
 	sus: '/assets/sus.png',
 	fortnite: '/assets/fortnite.jpg'
 }

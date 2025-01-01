@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Spruce up header, add tangible content">
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Update pictures, ruin commit history">
+      <change afterPath="$PROJECT_DIR$/static/assets/uis-logo-light.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/Daryk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
     </list>
     <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin" />
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
+      <change beforePath="$PROJECT_DIR$/static/assets/uis-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/uis-logo-dark.svg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,8 +82,8 @@
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\data" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\fonts" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
@@ -103,7 +110,7 @@
       <workItem from="1735578959457" duration="10272000" />
       <workItem from="1735618585178" duration="2086000" />
       <workItem from="1735627284109" duration="8457000" />
-      <workItem from="1735693983890" duration="9391000" />
+      <workItem from="1735693983890" duration="18231000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -161,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735704862054</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update pictures, ruin commit history">
+      <option name="closed" value="true" />
+      <created>1735705287515</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735705287515</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +202,7 @@
     <MESSAGE value="Sus that baka and add to staff.svelte" />
     <MESSAGE value="Add the smallest thing to README.md" />
     <MESSAGE value="Spruce up header, add tangible content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spruce up header, add tangible content" />
+    <MESSAGE value="Update pictures, ruin commit history" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update pictures, ruin commit history" />
   </component>
 </project>

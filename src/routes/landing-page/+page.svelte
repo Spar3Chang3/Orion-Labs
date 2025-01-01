@@ -2,7 +2,11 @@
     import { onMount } from 'svelte';
     import { VideoLinks } from '$lib/index.js';
 
-    let {isMobile} = $props();
+    let {isMobile = true} = $props();
+
+    onMount(() => {
+        console.log(isMobile);
+    });
 </script>
 <style lang="css">
     .landing-page {
@@ -73,12 +77,6 @@
         color: whitesmoke;
         text-shadow: 2px 2px 4px var(--banner-accent);
         z-index: 2;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .promotion-text {
-            color: #1A1A1A;
-        }
     }
 
 </style>

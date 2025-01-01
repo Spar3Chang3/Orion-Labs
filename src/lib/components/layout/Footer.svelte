@@ -4,6 +4,7 @@
 
 	let {isMobile = false, prefersDarkMode = false} = $props();
 	let githubLogo = $derived((prefersDarkMode ? IconLinks.github.dark : IconLinks.github.light));
+	let uisLogo = $derived((prefersDarkMode ? IconLinks.uis.dark : IconLinks.uis.light));
 
 </script>
 
@@ -100,7 +101,7 @@
 		</a>
 
 		<a href={SocialLinks.uishome} target="_blank">
-			<img src={IconLinks.uis} alt="UIS Home" />
+			<img src={uisLogo} alt="UIS Home" />
 		</a>
 	</div>
 </section>
