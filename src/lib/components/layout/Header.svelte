@@ -1,27 +1,13 @@
 <script lang="js">
-	import { SiteLinks } from '$lib/index.js';
+	import { SiteLinks, IconLinks } from '$lib/index.js';
 	import { onMount } from 'svelte';
 
-	let {isMobile = false} = $props();
+	let {isMobile = false, prefersDarkMode = false} = $props();
+	let orionLabLogo = $derived((prefersDarkMode ? IconLinks.orion.dark : IconLinks.orion.light));
 
 </script>
 
 <style lang="css">
-    @media (prefers-color-scheme: dark) {
-				.navbar.adaptive {
-            background-color: black;
-            border-bottom: 0.1vh solid #F0F0F0;
-				}
-				.navbar.adaptive a {
-            color: white;
-				}
-				.portrait-container.adaptive a img{
-						/*Maybe not...*/
-						filter: invert(100%);
-        }
-
-
-    }
 
 	.navbar {
 			display: grid;
@@ -32,8 +18,8 @@
 			max-height: 10vh;
 
 			width: 100vw;
-      background-color: white;
-			border-bottom: 0.1vh solid #1a1a1a;
+      background-color: var(--background-secondary);
+			border-bottom: 0.1vh solid var(--banner-accent);
 	}
 
 	.portrait-container {
@@ -74,7 +60,7 @@
 			font-family: Hacked, sans-serif;
 			font-size: clamp(0.5rem, 2rem, 3rem);
 			text-decoration: none;
-			color: #1a1a1a;
+			color: var(--text-standard);
 	}
 
 	.navigation a:hover {
@@ -103,7 +89,7 @@
 <section class="navbar adaptive">
 	<div class="portrait-container adaptive">
 		<a href={SiteLinks.landingPage} >
-		<img src="/assets/OrionLabLogo.svg" alt="Orion Labs Logo">
+		<img src={orionLabLogo} alt="Orion Labs Logo">
 		</a>
 	</div>
 	<div class="navigation">

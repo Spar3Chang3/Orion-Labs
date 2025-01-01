@@ -1,7 +1,9 @@
 <script lang="js">
 	import { SocialLinks, IconLinks } from '$lib/index.js';
+	import { onMount } from 'svelte';
 
-	let {isMobile = false} = $props();
+	let {isMobile = false, prefersDarkMode = false} = $props();
+	let githubLogo = $derived((prefersDarkMode ? IconLinks.github.dark : IconLinks.github.light));
 
 </script>
 
@@ -9,27 +11,13 @@
 
 
     @media (prefers-color-scheme: dark) {
-        .footer.adaptive {
-            background-color: black;
-            border-top: 0.1vh solid #F0F0F0;
-            filter: brightness(100%);/*For some fucking reason applying a filter forces this to display above the darkness in the amongus page*/
-        }
         .copyright.adaptive {
-            color: white;
-
+            color: lightgrey;
 
         }
         .copyright.adaptive a {
-            text-decoration: none;
             color: lightsalmon;
         }
-				.social-shelf img {
-						/*Should this only affect the github logo? That's the one that needs it.*/
-						filter: brightness(150%);
-						/*filter: invert(1);*/
-            /*filter: drop-shadow(0 0 5px white)*/
-				}
-
     }
     .footer {
         display: grid;
@@ -39,9 +27,10 @@
         max-height: 10vh;
         width: 100vw;
 
-        background-color: white;
+        background-color: var(--background-secondary);
         font-family: Hacked, sans-serif;
-        border-top: 0.1vh solid #1a1a1a;
+        border-top: 0.1vh solid var(--banner-accent);
+				filter:brightness(100%);
     }
 
 	.copyright {
@@ -99,7 +88,7 @@
 	<div class="social-shelf adaptive">
 
 		<a href={SocialLinks.github} target="_blank">
-			<img src={IconLinks.github} alt="Github Logo"/>
+			<img src={githubLogo} alt="Github Logo"/>
 		</a>
 
 		<a href={SocialLinks.discord} target="_blank">

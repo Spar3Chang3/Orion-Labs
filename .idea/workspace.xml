@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Sus that baka and add to staff.svelte">
-      <change afterPath="$PROJECT_DIR$/static/assets/google-maps-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/uis-logo.svg" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Spruce up header, add tangible content">
+      <change afterPath="$PROJECT_DIR$/static/assets/github-logo-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/orion-lab-logo-light.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/OrionLabLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/orion-lab-logo-dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/github-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/github-logo-light.svg" afterDir="false" />
     </list>
     <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin" />
     <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/OrionLabLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/orion-lab-logo-dark.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,30 +47,31 @@
     &quot;assignee&quot;: &quot;Spar3Chang3&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Spar3Chang3/Orion-Labs&quot;,
-    &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Spar3Chang3/Orion-Labs.git",
+    "accountId": "7398f066-a024-4eda-a6df-e25fa531bd3e"
   }
-}</component>
+}]]></component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/routes/landing-page/+page.svelte">
+    <file path="$PROJECT_DIR$/static/assets/orion-lab-logo-dark.svg">
       <ranges>
-        <range start1="17" end1="18" start2="17" end2="18" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="35" end1="36" start2="35" end2="36" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="56" end1="57" start2="56" end2="57" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="73" end1="73" start2="73" end2="74" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="109" end1="109" start2="110" end2="115" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="5" end1="6" start2="5" end2="7" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="9" end1="10" start2="10" end2="11" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="17" end1="18" start2="18" end2="19" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="21" end1="22" start2="22" end2="24" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte">
+    <file path="$PROJECT_DIR$/src/routes/+layout.svelte">
       <ranges>
-        <range start1="9" end1="16" start2="9" end2="40" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="17" end1="21" start2="41" end2="45" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="42" end1="43" start2="66" end2="67" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="70" end1="72" start2="94" end2="96" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="74" end1="75" start2="98" end2="99" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="83" end1="83" start2="107" end2="115" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="8" end1="8" start2="8" end2="34" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="10" end1="11" start2="36" end2="38" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="25" end1="26" start2="52" end2="55" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="28" end1="28" start2="57" end2="59" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="30" end1="30" start2="61" end2="71" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="40" end1="47" start2="81" end2="81" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="52" end1="53" start2="86" end2="87" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="62" end1="63" start2="96" end2="97" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
       </ranges>
     </file>
   </component>
@@ -85,26 +85,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/trash/WebstormProjects/Orion-Labs/static/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Development\\Editors\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/static/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Development\\Editors\\JetBrains\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
@@ -116,7 +117,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
       </set>
     </attachedChunks>
   </component>
@@ -135,6 +136,7 @@
       <workItem from="1735578959457" duration="10272000" />
       <workItem from="1735618585178" duration="2086000" />
       <workItem from="1735627284109" duration="8457000" />
+      <workItem from="1735693983890" duration="8200000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />

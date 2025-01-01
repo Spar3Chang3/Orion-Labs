@@ -8,7 +8,14 @@ export const SiteLinks = {
 }
 
 export const IconLinks = {
-	github: '/assets/github-logo.svg',
+	orion: {
+		light: '/assets/orion-lab-logo-light.svg',
+		dark: '/assets/orion-lab-logo-dark.svg'
+	},
+	github: {
+		light: '/assets/github-logo-light.svg',
+		dark: '/assets/github-logo-dark.svg'
+	},
 	discord: '/assets/discord-logo.svg',
 	gmaps: '/assets/google-maps-logo.svg',
 	uis: '/assets/uis-logo.svg',
