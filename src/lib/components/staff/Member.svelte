@@ -1,6 +1,6 @@
 <script lang="js">
 
-	let { name, role, bio, portrait } = $props();
+	let { name, role, bio, portrait, url} = $props();
 
 </script>
 
@@ -34,6 +34,7 @@
 			justify-content: center;
 			align-items: center;
 
+
 			overflow: hidden;
   }
 
@@ -49,8 +50,22 @@
 			font-family: Hacked, sans-serif;
 			font-size: 2rem;
 	}
-</style>
+	.content {
+      display: flex;
+      flex-direction: column;
 
+      height: 100%;
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+
+	}
+	a {
+			text-decoration: none;
+	}
+</style>
+<a href={url} target="_blank">
 <div class="member">
 	<div class="portrait-container">
 		<img src={portrait} alt="Staff Member Portrait" />
@@ -61,3 +76,4 @@
 		<p>{bio}</p>
 	</div>
 </div>
+</a>

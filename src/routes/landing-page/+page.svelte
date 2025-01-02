@@ -30,7 +30,7 @@
         flex-wrap: wrap;
         background-color: var(--banner-standard);
         color: whitesmoke;
-        font-family: sans-serif;
+        font-family: var(--font-standard);
         line-height: 1.5rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -72,10 +72,10 @@
 
         text-decoration: none;
 
-        font-family: Hacked, sans-serif;
+        font-family: var(--font-special);
         font-size: 4rem;
         color: whitesmoke;
-        text-shadow: 2px 2px 4px var(--banner-accent);
+        text-shadow: 4px 4px 2px var(--banner-accent);
         z-index: 2;
     }
 

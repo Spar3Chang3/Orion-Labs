@@ -4,18 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Update pictures, ruin commit history">
-      <change afterPath="$PROJECT_DIR$/static/assets/uis-logo-light.svg" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Functioning Darkmode, cool new logo, etc">
+      <change afterPath="$PROJECT_DIR$/static/data/aboutUs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
+    </list>
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
       <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-    </list>
-    <list id="c2b43348-d6f6-4440-ad92-89cd90b6bd01" name="Changes by Admin" comment="Changes by Admin" />
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
-      <change beforePath="$PROJECT_DIR$/static/assets/uis-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/uis-logo-dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/staffList.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/staffList.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,21 @@
     "accountId": "7398f066-a024-4eda-a6df-e25fa531bd3e"
   }
 }]]></component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/routes/about/+page.svelte">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="28" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="3" end1="3" start2="30" end2="72" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="5" end1="7" start2="74" end2="87" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/routes/staff/+page.svelte">
+      <ranges>
+        <range start1="37" end1="37" start2="37" end2="38" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="42" end1="43" start2="43" end2="44" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -110,7 +129,7 @@
       <workItem from="1735578959457" duration="10272000" />
       <workItem from="1735618585178" duration="2086000" />
       <workItem from="1735627284109" duration="8457000" />
-      <workItem from="1735693983890" duration="18231000" />
+      <workItem from="1735693983890" duration="26495000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -176,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735705287515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Functioning Darkmode, cool new logo, etc">
+      <option name="closed" value="true" />
+      <created>1735774747090</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735774747090</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +230,7 @@
     <MESSAGE value="Add the smallest thing to README.md" />
     <MESSAGE value="Spruce up header, add tangible content" />
     <MESSAGE value="Update pictures, ruin commit history" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update pictures, ruin commit history" />
+    <MESSAGE value="Functioning Darkmode, cool new logo, etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functioning Darkmode, cool new logo, etc" />
   </component>
 </project>

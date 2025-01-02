@@ -35,11 +35,12 @@
 			align-items: center;
 			justify-content: center;
 			gap: 1.5rem;
+
 	}
 </style>
 
 <section class="staff">
 	{#each staff as member}
-		<Member name={member.name} role={member.role} bio={member.bio} portrait={member.portrait} />
+		<Member name={member.name} role={member.role} bio={member.bio} portrait={member.portrait} url={member.url} />
 	{/each}
 </section>

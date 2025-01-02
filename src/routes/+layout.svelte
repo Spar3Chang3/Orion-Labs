@@ -58,6 +58,11 @@
         --banner-accent: #0073e6;
 
         --text-standard: #000000;
+        --hyperlink: rebeccapurple;
+        --line-height-standard: 1.5rem;
+        --font-standard: sans-serif;
+        --font-special: Hacked, sans-serif;
+
 
         overflow-x: hidden;
 
@@ -66,9 +71,11 @@
             --background-secondary: #1A1A1A;
 
             --text-standard: #FFFFFF;
-            main.adaptive {
-                background-color: #2B2B2B;
+            --hyperlink: #c8b18b;
+            main {
+                background-color: var(--background-standard);
             }
+
         }
     }
 

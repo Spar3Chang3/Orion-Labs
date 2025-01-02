@@ -24,6 +24,7 @@
 	}
 
 	function handleSusClick(e) {
+		yippee.currentTime = 0;
 		yippee.play();
 		confetti({
 			origin: {
@@ -51,6 +52,7 @@
 			window.removeEventListener('mousemove', handleMouseMove);
 			sus.pause();
 			sus = null;
+			yippee = null;
 		};
 	});
 </script>

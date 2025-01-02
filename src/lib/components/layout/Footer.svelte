@@ -16,9 +16,7 @@
             color: lightgrey;
 
         }
-        .copyright.adaptive a {
-            color: lightsalmon;
-        }
+
     }
     .footer {
         display: grid;
@@ -49,7 +47,7 @@
 	}
 	.copyright a {
 			text-decoration: none;
-			color: rebeccapurple;
+			color: var(--hyperlink);
 	}
 
 	.social-shelf {

@@ -42,5 +42,7 @@ export const VideoLinks = {
 
 //The links in here are majorly temporary
 export const DataLinks = {
-	staff: '/data/staffList.json'
+	staff: '/data/staffList.json',
+	about: '/data/aboutUs.txt',
+	asciiart: '/data/ascii.txt'
 }
