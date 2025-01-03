@@ -5,21 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Functioning Darkmode, cool new logo, etc">
-      <change afterPath="$PROJECT_DIR$/static/data/aboutUs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/layout/Modal.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/alert-triangle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/alert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
     </list>
     <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/staffList.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/staffList.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,7 @@
         <option value="+page" />
         <option value="+error" />
         <option value="Member" />
+        <option value="Modal" />
       </list>
     </option>
   </component>
@@ -47,24 +48,18 @@
     &quot;assignee&quot;: &quot;Spar3Chang3&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Spar3Chang3/Orion-Labs.git",
-    "accountId": "7398f066-a024-4eda-a6df-e25fa531bd3e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Spar3Chang3/Orion-Labs.git&quot;,
+    &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
   }
-}]]></component>
+}</component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/routes/about/+page.svelte">
+    <file path="$PROJECT_DIR$/src/routes/+layout.svelte">
       <ranges>
-        <range start1="1" end1="1" start2="1" end2="28" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="3" end1="3" start2="30" end2="72" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="5" end1="7" start2="74" end2="87" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/routes/staff/+page.svelte">
-      <ranges>
-        <range start1="37" end1="37" start2="37" end2="38" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="42" end1="43" start2="43" end2="44" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="77" end1="78" start2="77" end2="77" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
+        <range start1="79" end1="79" start2="78" end2="79" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
+        <range start1="89" end1="90" start2="89" end2="89" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
       </ranges>
     </file>
   </component>
@@ -91,7 +86,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Development\\Editors\\JetBrains\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Development\\Editors\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -101,8 +96,8 @@
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\data" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\data" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\fonts" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
@@ -110,7 +105,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
       </set>
     </attachedChunks>
   </component>
@@ -130,6 +125,7 @@
       <workItem from="1735618585178" duration="2086000" />
       <workItem from="1735627284109" duration="8457000" />
       <workItem from="1735693983890" duration="26495000" />
+      <workItem from="1735887311640" duration="9274000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />

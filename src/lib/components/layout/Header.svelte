@@ -1,9 +1,22 @@
 <script lang="js">
 	import { SiteLinks, IconLinks } from '$lib/index.js';
+	import Modal from '$lib/components/layout/Modal.svelte';
+	import { afterNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 
 	let {isMobile = false, prefersDarkMode = false} = $props();
 	let orionLabLogo = $derived((prefersDarkMode ? IconLinks.orion.dark : IconLinks.orion.light));
+
+	let isModalOpen = $state(false);
+
+	function changeModalState(e) {
+		e.preventDefault();
+		isModalOpen = !isModalOpen;
+	}
+
+	afterNavigate(() => {
+		isModalOpen = false;
+	});
 
 </script>
 
@@ -73,6 +86,35 @@
 		Currently, only stole the keyframes code for one part lmao, needs work
 	*/
 
+	@media only screen and (max-width: 768px) {
+			.navigation-modal a{
+					color: var(--text-standard);
+			}
+			.navigation {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+			}
+			.button-container {
+					position: fixed;
+					padding: 10px;
+					z-index: 100;
+			}
+			.nav-vis-button {
+					height: 6vh;
+					width: 6vh;
+
+					background-color: var(--banner-standard);
+					border: 0.1vh solid var(--banner-accent);
+					color: var(--text-standard);
+					transition: 50ms ease;
+			}
+			.nav-vis-button:active {
+					background-color: var(--banner-accent);
+					transform: scale(0.90);
+      }
+	}
+
 	@keyframes glitch {
       0% {
           text-shadow: -4px 6px 0 var(--banner-accent), 4px -6px 0 var(--banner-standard);
@@ -86,16 +128,32 @@
 
 </style>
 
-<section class="navbar adaptive">
-	<div class="portrait-container adaptive">
+<section class="navbar">
+	<div class="portrait-container">
 		<a href={SiteLinks.landingPage} >
 		<img src={orionLabLogo} alt="Orion Labs Logo">
 		</a>
 	</div>
-	<div class="navigation">
-		<a href={SiteLinks.about}>About Us</a>
-		<a href={SiteLinks.staff}>Staff</a>
-		<a href={SiteLinks.sus}>amogus ඞ</a>
-		<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
-	</div>
+	{#if isMobile}
+		<div class="navigation">
+			<div class="button-container">
+				<button class="nav-vis-button" onclick={changeModalState}>☰</button>
+			</div>
+			<div class="navigation-modal">
+				<Modal bind:isOpen={isModalOpen} title={"I LOVE PENGIS"} showExitButton={false} showTitle={false} >
+					<a href={SiteLinks.about}>About Us</a>
+					<a href={SiteLinks.staff}>Staff</a>
+					<a href={SiteLinks.sus}>amogus ඞ</a>
+					<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
+				</Modal>
+			</div>
+		</div>
+	{:else}
+		<div class="navigation">
+			<a href={SiteLinks.about}>About Us</a>
+			<a href={SiteLinks.staff}>Staff</a>
+			<a href={SiteLinks.sus}>amogus ඞ</a>
+			<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
+		</div>
+	{/if}
 </section>

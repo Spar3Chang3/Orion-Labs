@@ -75,8 +75,8 @@
             main {
                 background-color: var(--background-standard);
             }
-
         }
+        background-color: var(--background-secondary);
     }
 
     :global(html, body) {
@@ -87,7 +87,6 @@
         min-height: 79.8vh;
         max-height: fit-content;
     }
-
 
 </style>
 

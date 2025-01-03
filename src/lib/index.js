@@ -23,7 +23,9 @@ export const IconLinks = {
 		dark: '/assets/uis-logo-dark.svg'
 	},
 	sus: '/assets/sus.png',
-	fortnite: '/assets/fortnite.jpg'
+	fortnite: '/assets/fortnite.jpg',
+
+	alert: '/assets/alert.png'
 }
 
 export const SocialLinks = {

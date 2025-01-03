@@ -12,6 +12,7 @@
 
 			height: fit-content;
 			width: 480px;
+			max-width: 100vw;
 
 			justify-content: center;
 			justify-items: center;
