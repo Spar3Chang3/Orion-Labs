@@ -22,20 +22,34 @@
 
 <style lang="css">
 
-	.navbar {
-			display: grid;
-			grid-template-columns: 34% 66%;
-			grid-template-rows: 1fr;
+	.relative-navbar {
+			display: block;
 
 			min-height: 50px;
-			max-height: 10vh;
+			height: 10vh;
 
 			width: 100vw;
       background-color: var(--background-secondary);
 			border-bottom: 0.1vh solid var(--banner-accent);
 	}
 
+	.fixed-navbar {
+			position: fixed;
+      display: grid;
+      grid-template-columns: 34% 66%;
+      grid-template-rows: 1fr;
+
+      min-height: 50px;
+      max-height: 10vh;
+
+      width: 100vw;
+      background-color: var(--background-secondary);
+      border-bottom: 0.1vh solid var(--banner-accent);
+			z-index: 10;
+	}
+
 	.portrait-container {
+			position: relative;
 			display: flex;
 			height: 100%;
 			width: 100%;
@@ -52,6 +66,7 @@
 	}
 
   .navigation {
+			position: relative;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
       grid-template-rows: 1fr;
@@ -128,32 +143,37 @@
 
 </style>
 
-<section class="navbar">
-	<div class="portrait-container">
-		<a href={SiteLinks.landingPage} >
-		<img src={orionLabLogo} alt="Orion Labs Logo">
-		</a>
+<section class="relative-navbar">
+	<div class="fixed-navbar">
+		<div class="portrait-container">
+			<a href={SiteLinks.landingPage} >
+				<img src={orionLabLogo} alt="Orion Labs Logo">
+			</a>
+		</div>
+		{#if isMobile}
+			<div class="navigation">
+				<div class="button-container">
+					<button class="nav-vis-button" onclick={changeModalState}>☰</button>
+				</div>
+				<div class="navigation-modal">
+					<Modal bind:isOpen={isModalOpen} title={"I LOVE PENGIS"} showExitButton={false} showTitle={false} >
+						<a href={SiteLinks.about}>About Us</a>
+						<br/>
+						<a href={SiteLinks.staff}>Staff</a>
+						<br/>
+						<a href={SiteLinks.sus}>amogus ඞ</a>
+						<br/>
+						<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
+					</Modal>
+				</div>
+			</div>
+		{:else}
+			<div class="navigation">
+				<a href={SiteLinks.about}>About Us</a>
+				<a href={SiteLinks.staff}>Staff</a>
+				<a href={SiteLinks.sus}>amogus ඞ</a>
+				<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
+			</div>
+		{/if}
 	</div>
-	{#if isMobile}
-		<div class="navigation">
-			<div class="button-container">
-				<button class="nav-vis-button" onclick={changeModalState}>☰</button>
-			</div>
-			<div class="navigation-modal">
-				<Modal bind:isOpen={isModalOpen} title={"I LOVE PENGIS"} showExitButton={false} showTitle={false} >
-					<a href={SiteLinks.about}>About Us</a>
-					<a href={SiteLinks.staff}>Staff</a>
-					<a href={SiteLinks.sus}>amogus ඞ</a>
-					<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
-				</Modal>
-			</div>
-		</div>
-	{:else}
-		<div class="navigation">
-			<a href={SiteLinks.about}>About Us</a>
-			<a href={SiteLinks.staff}>Staff</a>
-			<a href={SiteLinks.sus}>amogus ඞ</a>
-			<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
-		</div>
-	{/if}
 </section>

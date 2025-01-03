@@ -63,6 +63,8 @@
         --font-standard: sans-serif;
         --font-special: Hacked, sans-serif;
 
+        --banner-text-size: 2rem;
+
 
         overflow-x: hidden;
 
@@ -72,10 +74,8 @@
 
             --text-standard: #FFFFFF;
             --hyperlink: #c8b18b;
-            main {
-                background-color: var(--background-standard);
-            }
         }
+
         background-color: var(--background-secondary);
     }
 
@@ -86,6 +86,7 @@
     main {
         min-height: 79.8vh;
         max-height: fit-content;
+        background-color: var(--background-standard);
     }
 
 </style>

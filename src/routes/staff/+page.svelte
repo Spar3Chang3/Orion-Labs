@@ -25,23 +25,48 @@
 
 	.staff {
 			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
+			flex-direction: column;
 
 			min-height: 79.8vh;
 			max-height: fit-content;
 			width: 100vw;
 
 			align-items: center;
+	}
+
+	.staff h2 {
+			height: fit-content;
+			width: 100%;
+
+			padding: 2rem;
+			margin: 0 auto;
+
+			background-color: var(--banner-standard);
+			font-family: var(--font-special);
+			font-size: var(--banner-text-size);
+			color: var(--text-standard);
+	}
+
+	.content {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			height: 100%;
+			width: 100%;
+
 			justify-content: center;
 			gap: 1.5rem;
-			overflow: hidden;
-
+			padding: 2rem;
+			line-height: var(--line-height-standard);
 	}
 </style>
 
 <section class="staff">
-	{#each staff as member}
-		<Member name={member.name} role={member.role} bio={member.bio} portrait={member.portrait} url={member.url} />
-	{/each}
+	<h2>Staff Members</h2>
+	<div class="content">
+		{#each staff as member}
+			<Member name={member.name} role={member.role} bio={member.bio} portrait={member.portrait} url={member.url} />
+		{/each}
+	</div>
 </section>

@@ -1,4 +1,3 @@
-<!-- Modal.svelte -->
 <script>
 
 	let { isOpen = $bindable(), title = "Penis", showExitButton = false, showTitle = true, children } = $props();
@@ -61,7 +60,7 @@
 
         color: var(--text-standard);
 
-				transition: opacity 0.5s;
+				transition: opacity 250ms;
 				transform: translateY(10.1vh);
     }
 

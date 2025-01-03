@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { DataLinks } from '$lib/index.js';
 
-
 	let aboutText = $state("");
 	let asciiArt = $state("");
 
@@ -30,8 +29,9 @@
 <style lang="css">
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-	.aboutUs {
+	.about {
 			display: flex;
+			flex-direction: column;
 			color: var(--text-standard);
       background-color: var(--background-standard);
 
@@ -39,7 +39,7 @@
 			max-height: fit-content;
 			width: 100vw;
 
-			justify-content: center;
+			align-items: center;
 	}
 
 	.content {
@@ -49,13 +49,19 @@
 			height: 100%;
 			width: 100%;
 			line-height: var(--line-height-standard);
+			font-family: var(--font-standard);
 	}
 
-	.content h2 {
+	.about h2 {
+			height: fit-content;
+			width: 100%;
+
 			background-color: var(--banner-standard);
 			padding: 2rem;
-			color: whitesmoke;
+			color: var(--text-standard);
 			font-family: var(--font-special);
+			font-size: var(--banner-text-size);
+			margin: 0 auto;
 	}
 
 	.ascii {
@@ -72,11 +78,11 @@
 	}
 
 </style>
-<section class="aboutUs">
+<section class="about">
+	<h2>
+		About Orion Lab
+	</h2>
 	<div class="content">
-		<h2>
-			About Orion Lab
-		</h2>
 		<p class="about-text" style="white-space: pre; text-wrap: wrap">
 			{aboutText}
 		</p>

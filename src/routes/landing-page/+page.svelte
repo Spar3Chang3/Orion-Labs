@@ -36,6 +36,12 @@
         padding-bottom: 1rem;
     }
 
+    .intro h2, .outro h2 {
+        font-family: var(--font-special);
+        text-rendering: optimizeLegibility;
+        font-size: var(--banner-text-size);
+    }
+
 
 
     .intro p, h2, .outro p, h2 {
@@ -117,6 +123,6 @@
 
     <div class="outro">
         <h2>Visit Us</h2>
-        <p>Even if you don't want to officially join, drop by and say hi. You might just walk away with a better day</p>
+        <p>Even if you don't want to join, drop by and say hi. Orion Lab offers something for everyone, whether that be friends, fun, or fictional doomsday plans</p>
     </div>
 </section>
