@@ -87,6 +87,7 @@
         min-height: 79.8vh;
         max-height: fit-content;
         background-color: var(--background-standard);
+        overflow-x: hidden;
     }
 
 </style>
@@ -102,5 +103,5 @@
     {/if}
 </main>
 <footer>
-    <Footer isMobile={isMobile} prefersDarkMode={prefersDarkMode}/>
+    <Footer prefersDarkMode={prefersDarkMode}/>
 </footer>

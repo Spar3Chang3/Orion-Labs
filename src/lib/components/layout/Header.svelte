@@ -120,8 +120,8 @@
 					width: 6vh;
 
 					background-color: var(--banner-standard);
+          color:whitesmoke;
 					border: 0.1vh solid var(--banner-accent);
-					color: var(--text-standard);
 					transition: 50ms ease;
 			}
 			.nav-vis-button:active {

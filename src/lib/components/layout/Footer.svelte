@@ -1,8 +1,7 @@
 <script lang="js">
 	import { SocialLinks, IconLinks } from '$lib/index.js';
-	import { onMount } from 'svelte';
 
-	let {isMobile = false, prefersDarkMode = false} = $props();
+	let { prefersDarkMode = false } = $props();
 	let githubLogo = $derived((prefersDarkMode ? IconLinks.github.dark : IconLinks.github.light));
 	let uisLogo = $derived((prefersDarkMode ? IconLinks.uis.dark : IconLinks.uis.light));
 
@@ -10,14 +9,6 @@
 
 <style lang="css">
 
-
-    @media (prefers-color-scheme: dark) {
-        .copyright.adaptive {
-            color: lightgrey;
-
-        }
-
-    }
     .footer {
         display: grid;
         grid-template-columns: 66% 34%;
@@ -29,7 +20,6 @@
         background-color: var(--background-secondary);
         font-family: Hacked, sans-serif;
         border-top: 0.1vh solid var(--banner-accent);
-				filter:brightness(100%);
     }
 
 	.copyright {
@@ -40,6 +30,7 @@
 
 			justify-content: center;
 			align-items: flex-start;
+			text-align: center;
 
 			font-size: 1rem;
 			color: grey;
@@ -59,12 +50,13 @@
 			width: 100%;
 
 			justify-content: center;
+			justify-items: center;
 			align-items: center;
 	}
 
 	.social-shelf a {
 			height: 6vh;
-			width: 6vw;
+			width: 6vh;
 	}
 
 	.social-shelf a > img {
@@ -78,13 +70,37 @@
 			transform: scale(1.1);
 	}
 
+	@media only screen and (max-width: 768px) {
+			.footer {
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr 1fr;
+
+					max-height: fit-content;
+
+					justify-items: center;
+			}
+
+			.copyright {
+					width: 100%;
+					align-items: center;
+					padding: 0;
+			}
+
+			.social-shelf {
+					width: 100%;
+
+					justify-items: center;
+			}
+
+	}
+
 </style>
 
-<section class="footer adaptive">
-	<div class="copyright adaptive">
-		<p>© 2024 Orion Labs - All Rights Thought About <br>This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
+<section class="footer">
+	<div class="copyright">
+		<p>© 2024 Orion Labs - All Rights Thought About <br> This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
 	</div>
-	<div class="social-shelf adaptive">
+	<div class="social-shelf">
 
 		<a href={SocialLinks.github} target="_blank">
 			<img src={githubLogo} alt="Github Logo"/>

@@ -73,6 +73,7 @@
 				background-repeat: no-repeat;
         overflow: hidden;
     }
+
 		.find-me {
 				position: absolute;
 		}
@@ -90,10 +91,11 @@
         width: 100%;
         height: 79.8vh;
     }
+
     .light {
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: 79.8vh;
     }
 
 		.clickable {

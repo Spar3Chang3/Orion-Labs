@@ -12,5 +12,12 @@
     "bio": "Successful College Student",
     "portrait": "/data/Edward.jpg",
     "url" : "https://edsmcserv.com/QR2.html"
+  },
+  {
+    "name": "Brian",
+    "role": "sage",
+    "bio": "a little too old to be a college student",
+    "portrait": "/data/Edward.jpg",
+    "url" : "https://castlecrashers.fandom.com/wiki/Blacksmith"
   }
 ]

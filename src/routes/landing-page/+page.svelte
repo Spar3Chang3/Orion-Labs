@@ -1,12 +1,8 @@
 <script lang="js">
-    import { onMount } from 'svelte';
     import { VideoLinks } from '$lib/index.js';
 
-    let {isMobile = true} = $props();
+    let {isMobile = false} = $props();
 
-    onMount(() => {
-        console.log(isMobile);
-    });
 </script>
 <style lang="css">
     .landing-page {
@@ -31,9 +27,12 @@
         background-color: var(--banner-standard);
         color: whitesmoke;
         font-family: var(--font-standard);
-        line-height: 1.5rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+
+    .intro p, .outro p {
+        line-height: var(--line-height-standard);
     }
 
     .intro h2, .outro h2 {

@@ -54,11 +54,11 @@
 
 	.about h2 {
 			height: fit-content;
-			width: 100%;
+			width: 100vw;
 
 			background-color: var(--banner-standard);
 			padding: 2rem;
-			color: var(--text-standard);
+			color: whitesmoke;
 			font-family: var(--font-special);
 			font-size: var(--banner-text-size);
 			margin: 0 auto;

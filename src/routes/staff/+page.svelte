@@ -36,7 +36,7 @@
 
 	.staff h2 {
 			height: fit-content;
-			width: 100%;
+			width: 100vw;
 
 			padding: 2rem;
 			margin: 0 auto;
@@ -44,7 +44,7 @@
 			background-color: var(--banner-standard);
 			font-family: var(--font-special);
 			font-size: var(--banner-text-size);
-			color: var(--text-standard);
+			color: whitesmoke;
 	}
 
 	.content {
