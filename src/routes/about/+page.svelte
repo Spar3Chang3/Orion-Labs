@@ -92,6 +92,7 @@
 
 	.license {
 			padding-right: 2rem;
+			z-index: 10;
 	}
 
 	.ascii-wrapper {
@@ -127,6 +128,7 @@
       top: 50vh;
       left: 50%;
       transform: translate(-50%, -50%);
+			z-index: 1;
 	}
 
 	.about-text {
@@ -140,6 +142,26 @@
 
 					height: 70vh;
 					width: 100vw;
+			}
+	}
+
+	@media only screen and (orientation: portrait) and (max-width: 768px) {
+
+			.license {
+					padding: 0.5rem;
+			}
+
+			.ascii-wrapper {
+					height: 140vh;
+			}
+
+			.ascii {
+					top: 75vh;
+
+					height: 150vh;
+					width: 200vw;
+
+					font-size: 0.4rem;
 			}
 	}
 
