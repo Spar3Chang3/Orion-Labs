@@ -46,5 +46,6 @@ export const VideoLinks = {
 export const DataLinks = {
 	staff: '/data/staffList.json',
 	about: '/data/aboutUs.txt',
+	ascii: '/data/ascii-gif.txt',
 	asciiart: '/data/ascii.txt'
 }

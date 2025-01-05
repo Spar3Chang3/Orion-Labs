@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Add support for mobile to header">
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Enforce brand consistency, add fixed header">
+      <change afterPath="$PROJECT_DIR$/static/data/ascii-gif.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/staffList.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/staffList.json" afterDir="false" />
-    </list>
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
-    <list id="43f3d7e8-3c1a-4dcf-a4f5-bde97a932620" name="Changes by trash" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
     </list>
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+    </list>
+    <list id="43f3d7e8-3c1a-4dcf-a4f5-bde97a932620" name="Changes by trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +41,12 @@
     &quot;assignee&quot;: &quot;Spar3Chang3&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Spar3Chang3/Orion-Labs",
-    "accountId": "dbdf5b26-bcb7-4de4-a396-dbca0b4a1f01"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Spar3Chang3/Orion-Labs.git&quot;,
+    &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -62,31 +57,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/static/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/trash/WebstormProjects/Orion-Labs/static/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Development\\Editors\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\data" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\fonts" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
@@ -94,7 +89,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
       </set>
     </attachedChunks>
   </component>
@@ -117,6 +112,10 @@
       <workItem from="1735887311640" duration="13329000" />
       <workItem from="1735935996859" duration="2970000" />
       <workItem from="1735950158669" duration="4617000" />
+      <workItem from="1735970840422" duration="2428000" />
+      <workItem from="1735984472483" duration="240000" />
+      <workItem from="1736066892096" duration="5705000" />
+      <workItem from="1736077460578" duration="1181000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />

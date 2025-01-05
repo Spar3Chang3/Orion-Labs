@@ -1,4 +1,4 @@
-<meta http-equiv="Refresh" content="4;/landing-page">
+<meta http-equiv="Refresh" content="0;/landing-page">
 <style>
 	.redirect {
 			display: flex;

@@ -3,7 +3,10 @@
 	import { DataLinks } from '$lib/index.js';
 
 	let aboutText = $state("");
-	let asciiArt = $state("");
+	let asciiPrint = $state("Ascii Loading...");
+	let ascii = $state([]);
+	let interval = $state();
+	let index = $state(0);
 
 	async function  getAboutText() {
 		fetch(DataLinks.about).then((res) => {
@@ -12,17 +15,40 @@
 			aboutText = data;
 		});
 	}
-	async function  getAsciiArt() {
-		fetch(DataLinks.asciiart).then((res) => {
+
+	// async function  getAsciiArt() {
+	// 	fetch(DataLinks.asciiart).then((res) => {
+	// 		return res.text();
+	// 	}).then((data) => {
+	// 		asciiArt = data;
+	// 	});
+	// }
+
+	async function getAndParseAsciiArt() {
+		await fetch(DataLinks.ascii).then((res) => {
 			return res.text();
 		}).then((data) => {
-			asciiArt = data;
+			ascii = data.split('~~~');
+		}).catch((err) => {
+			console.error("Could not fetch the corresponding ascii data: ", err);
 		});
 	}
 
 	onMount(() => {
 		getAboutText();
-		getAsciiArt();
+		getAndParseAsciiArt().then(() => {
+			interval = setInterval(() => {
+				asciiPrint = ascii[index];
+				index++;
+				index = (index % ascii.length);
+			}, 100);
+		});
+
+		return(() => {
+			if (interval) {
+				clearInterval(interval);
+			}
+		});
 	});
 
 </script>
@@ -64,18 +90,63 @@
 			margin: 0 auto;
 	}
 
+	.license {
+			padding-right: 2rem;
+	}
+
+	.ascii-wrapper {
+			position: relative;
+			display: flex;
+
+			height: 85vh;
+			width: 100vw;
+
+			align-items: end;
+			justify-content: end;
+			overflow: hidden;
+	}
+
 	.ascii {
+			position: absolute;
+			display: flex;
+			height: 85vh;
+			width: 60vw;
+
+			justify-content: center;
+			align-items: center;
+
+			overflow: hidden;
+			text-wrap: nowrap;
       padding: 0 2rem 2rem 2rem;
       font-family: "Roboto Mono", serif;
       font-optical-sizing: auto;
       font-weight: 400;
+			font-size: 0.5rem;
       font-style: normal;
-			text-align: center;
+
+      top: 50vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
 	}
-	.about-text{
+
+	.about-text {
       padding: 2rem 2rem 0 2rem;
 			font-family: var(--font-standard);
 	}
+
+	@media only screen and (orientation: portrait) and (max-aspect-ratio: 16/9) {
+			.ascii {
+					top: 35vh;
+
+					height: 70vh;
+					width: 100vw;
+			}
+	}
+
+	/*
+		* TODO:
+		* Literally all of mobile support. That means aspect ratios (probably anyway) and screen width queries and all of that wonderful wonderful jazz.
+	*/
 
 </style>
 <section class="about">
@@ -86,8 +157,11 @@
 		<p class="about-text" style="white-space: pre; text-wrap: wrap">
 			{aboutText}
 		</p>
-		<p class="ascii" style="white-space: pre; text-wrap: wrap">
-			{asciiArt}
-		</p>
+		<div class="ascii-wrapper">
+			<p class="ascii" style="white-space: pre; text-wrap: wrap">
+				{asciiPrint}
+			</p>
+			<p class="license"><a href="https://skfb.ly/oPTUp">"old PC low poly game model"</a> by creosine is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution.</a></p>
+		</div>
 	</div>
 </section>
