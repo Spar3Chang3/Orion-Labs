@@ -156,7 +156,7 @@
 					<button class="nav-vis-button" onclick={changeModalState}>☰</button>
 				</div>
 				<div class="navigation-modal">
-					<Modal bind:isOpen={isModalOpen} title={"I LOVE PENGIS"} showExitButton={false} showTitle={false} >
+					<Modal bind:isOpen={isModalOpen} title={"I LOVE PENGIS"} showExitButton={false} showTitle={false}>
 						<a href={SiteLinks.about}>About Us</a>
 						<br/>
 						<a href={SiteLinks.staff}>Staff</a>

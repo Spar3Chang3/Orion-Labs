@@ -91,44 +91,40 @@
 	}
 
 	.license {
-			padding-right: 2rem;
+			padding: 1rem;
 			z-index: 10;
 	}
 
 	.ascii-wrapper {
 			position: relative;
 			display: flex;
+      flex-direction: column;
 
-			height: 85vh;
-			width: 100vw;
-
-			align-items: end;
-			justify-content: end;
+      justify-content: center;
+      align-items: center;
 			overflow: hidden;
 	}
 
-	.ascii {
-			position: absolute;
-			display: flex;
-			height: 85vh;
-			width: 60vw;
+	.license a {
+			color: var(--hyperlink);
+			text-decoration: none;
+	}
 
+	.ascii {
+			position: relative;
+			display: flex;
 			justify-content: center;
 			align-items: center;
+			height: 35vh;
 
 			overflow: hidden;
 			text-wrap: nowrap;
-      padding: 0 2rem 2rem 2rem;
       font-family: "Roboto Mono", serif;
       font-optical-sizing: auto;
       font-weight: 400;
-			font-size: 0.5rem;
+			font-size: 0.4rem;
+			line-height: 0.5rem;
       font-style: normal;
-
-      top: 50vh;
-      left: 50%;
-      transform: translate(-50%, -50%);
-			z-index: 1;
 	}
 
 	.about-text {
@@ -136,39 +132,11 @@
 			font-family: var(--font-standard);
 	}
 
-	@media only screen and (orientation: portrait) and (max-aspect-ratio: 16/9) {
+	@media only screen and (max-width: 768px) {
 			.ascii {
-					top: 35vh;
-
-					height: 70vh;
-					width: 100vw;
+					height: 40vh;
 			}
 	}
-
-	@media only screen and (orientation: portrait) and (max-width: 768px) {
-
-			.license {
-					padding: 0.5rem;
-			}
-
-			.ascii-wrapper {
-					height: 140vh;
-			}
-
-			.ascii {
-					top: 75vh;
-
-					height: 150vh;
-					width: 200vw;
-
-					font-size: 0.4rem;
-			}
-	}
-
-	/*
-		* TODO:
-		* Literally all of mobile support. That means aspect ratios (probably anyway) and screen width queries and all of that wonderful wonderful jazz.
-	*/
 
 </style>
 <section class="about">
@@ -180,10 +148,10 @@
 			{aboutText}
 		</p>
 		<div class="ascii-wrapper">
-			<p class="ascii" style="white-space: pre; text-wrap: wrap">
+			<p class="ascii" style="white-space: pre; text-wrap: nowrap">
 				{asciiPrint}
 			</p>
-			<p class="license"><a href="https://skfb.ly/oPTUp">"old PC low poly game model"</a> by creosine is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution.</a></p>
+			<p class="license"><a href="https://skfb.ly/oPTUp" target="_blank">"old PC low poly game model"</a> by creosine is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution.</a> <br>This model has been transformed into a gif, then into ASCII. Why? I don't know, it looks cool.</p>
 		</div>
 	</div>
 </section>

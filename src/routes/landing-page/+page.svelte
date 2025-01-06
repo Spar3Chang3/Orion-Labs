@@ -1,5 +1,5 @@
 <script lang="js">
-    import { VideoLinks } from '$lib/index.js';
+    import { VideoLinks, SiteLinks } from '$lib/index.js';
 
     let {isMobile = false} = $props();
 
@@ -97,16 +97,16 @@
         <video autoplay muted loop playsinline>
             <source src={VideoLinks.printer} type="video/mp4" />
         </video>
-        <div class="promotion-text">
+        <a href={SiteLinks.about} class="promotion-text">
             <p>Infinite Opportunity</p>
-        </div>
+        </a>
     </div>
 
     <div class="promotion-video">
         <video autoplay muted loop playsinline>
             <source src={VideoLinks.people} type="video/mp4" />
         </video>
-        <a href="/staff" class="promotion-text">
+        <a href={SiteLinks.staff} class="promotion-text">
             <p>Passionate People</p>
         </a>
     </div>

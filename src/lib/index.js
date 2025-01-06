@@ -23,6 +23,7 @@ export const IconLinks = {
 		dark: '/assets/uis-logo-dark.svg'
 	},
 	sus: '/assets/sus.png',
+	crew: '/assets/crewmate.png',
 	fortnite: '/assets/fortnite.jpg',
 
 	alert: '/assets/alert.png'
@@ -46,6 +47,6 @@ export const VideoLinks = {
 export const DataLinks = {
 	staff: '/data/staffList.json',
 	about: '/data/aboutUs.txt',
-	ascii: '/data/ascii-gif.txt',
+	ascii: '/data/trimmedascii-gif.txt',
 	asciiart: '/data/ascii.txt'
 }

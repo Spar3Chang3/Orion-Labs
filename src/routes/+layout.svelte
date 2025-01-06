@@ -58,7 +58,7 @@
         --banner-accent: #0073e6;
 
         --text-standard: #000000;
-        --hyperlink: rebeccapurple;
+        --hyperlink: #c8b18b;
         --line-height-standard: 1.5rem;
         --font-standard: sans-serif;
         --font-special: Hacked, sans-serif;
@@ -73,7 +73,6 @@
             --background-secondary: #1A1A1A;
 
             --text-standard: #FFFFFF;
-            --hyperlink: #c8b18b;
         }
 
         background-color: var(--background-secondary);

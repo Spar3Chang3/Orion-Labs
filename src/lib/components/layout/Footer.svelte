@@ -57,6 +57,8 @@
 	.social-shelf a {
 			height: 6vh;
 			width: 6vh;
+			max-height: 4rem;
+			max-width: 4rem;
 	}
 
 	.social-shelf a > img {
@@ -93,6 +95,13 @@
 			}
 
 	}
+
+		/*@media only screen and (orientation: portrait) {*/
+		/*		.social-shelf a {*/
+		/*				height: 6vw;*/
+		/*				width: 6vw;*/
+		/*		}*/
+		/*}*/
 
 </style>
 
