@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="&quot;fix&quot; mobile support for about.svelte">
-      <change afterPath="$PROJECT_DIR$/static/assets/crewmate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/nope-wrong.mp3" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Make Ascii art good and tweak sus">
+      <change afterPath="$PROJECT_DIR$/mine-types.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/nunja/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_29_2024_10_06_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_29_2024_10_06_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_31_2024_7_05_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_31_2024_7_05_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/sus/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sus/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/aboutUs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/aboutUs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/ascii-gif.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/trimmedascii-gif.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/ascii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
-    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md">
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-    </list>
+    <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
     <list id="43f3d7e8-3c1a-4dcf-a4f5-bde97a932620" name="Changes by trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +28,12 @@
       <list>
         <option value="Header" />
         <option value="Footer" />
-        <option value="+layout" />
         <option value="+page" />
         <option value="+error" />
         <option value="Member" />
         <option value="Modal" />
+        <option value="+layout" />
+        <option value="+error.svelte" />
       </list>
     </option>
   </component>
@@ -56,33 +52,6 @@
     &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/routes/about/+page.svelte">
-      <ranges>
-        <range start1="93" end1="94" start2="93" end2="94" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="100" end1="100" start2="100" end2="101" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="101" end1="106" start2="102" end2="104" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="108" end1="108" start2="106" end2="111" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="110" end1="111" start2="113" end2="114" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="112" end1="115" start2="115" end2="115" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="117" end1="117" start2="117" end2="118" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="120" end1="121" start2="121" end2="121" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="124" end1="125" start2="124" end2="126" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="126" end1="131" start2="127" end2="127" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="138" end1="139" start2="134" end2="135" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="140" end1="164" start2="136" end2="137" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="166" end1="171" start2="139" end2="139" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-        <range start1="182" end1="183" start2="150" end2="151" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="185" end1="186" start2="153" end2="154" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte">
-      <ranges>
-        <range start1="59" end1="59" start2="59" end2="61" changelist="4b6756d5-5808-4f77-82b2-81404911bd00" />
-        <range start1="95" end1="95" start2="97" end2="104" changelist="cef3eb33-373b-4329-8d35-e05b57823add" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -152,7 +121,8 @@
       <workItem from="1735984472483" duration="240000" />
       <workItem from="1736066892096" duration="5705000" />
       <workItem from="1736077460578" duration="3058000" />
-      <workItem from="1736120569346" duration="10566000" />
+      <workItem from="1736120569346" duration="12070000" />
+      <workItem from="1736384183811" duration="8034000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -250,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736080999606</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Make Ascii art good and tweak sus">
+      <option name="closed" value="true" />
+      <created>1736139277302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736139277302</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +259,7 @@
     <MESSAGE value="Add support for mobile to header" />
     <MESSAGE value="Add a funny to about.svelte MOBILE SUPPORT BAD" />
     <MESSAGE value="&quot;fix&quot; mobile support for about.svelte" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;fix&quot; mobile support for about.svelte" />
+    <MESSAGE value="Make Ascii art good and tweak sus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make Ascii art good and tweak sus" />
   </component>
 </project>
