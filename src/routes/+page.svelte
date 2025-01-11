@@ -1,5 +1,13 @@
-<meta http-equiv="Refresh" content="0;/landing-page">
-<style>
+<script lang="js">
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		goto('/landing-page');
+	});
+
+</script>
+<style lang="css">
 	.redirect {
 			display: flex;
 			flex-direction: column;
