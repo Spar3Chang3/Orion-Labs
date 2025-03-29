@@ -116,6 +116,7 @@
 			justify-content: center;
 			align-items: center;
 			height: 35vh;
+			min-height: 20rem;
 
 			overflow: hidden;
 			text-wrap: nowrap;
