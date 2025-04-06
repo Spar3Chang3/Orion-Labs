@@ -1,9 +1,15 @@
 <script lang="js">
 	import { SocialLinks, IconLinks } from '$lib/index.js';
+	import { onMount } from 'svelte';
 
 	let { prefersDarkMode = false } = $props();
 	let githubLogo = $derived((prefersDarkMode ? IconLinks.github.dark : IconLinks.github.light));
 	let uisLogo = $derived((prefersDarkMode ? IconLinks.uis.dark : IconLinks.uis.light));
+	let currentYear = $state();
+
+	onMount(() => {
+		currentYear = new Date().getFullYear();
+	});
 
 </script>
 
@@ -95,19 +101,11 @@
 			}
 
 	}
-
-		/*@media only screen and (orientation: portrait) {*/
-		/*		.social-shelf a {*/
-		/*				height: 6vw;*/
-		/*				width: 6vw;*/
-		/*		}*/
-		/*}*/
-
 </style>
 
 <section class="footer">
 	<div class="copyright">
-		<p>© 2024 Orion Labs - All Rights Thought About <br> This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
+		<p>&copy; {currentYear} Orion Labs - All Rights Thought About <br> This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
 	</div>
 	<div class="social-shelf">
 

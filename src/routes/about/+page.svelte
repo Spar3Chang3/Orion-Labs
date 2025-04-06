@@ -16,14 +16,6 @@
 		});
 	}
 
-	// async function  getAsciiArt() {
-	// 	fetch(DataLinks.asciiart).then((res) => {
-	// 		return res.text();
-	// 	}).then((data) => {
-	// 		asciiArt = data;
-	// 	});
-	// }
-
 	async function getAndParseAsciiArt() {
 		await fetch(DataLinks.ascii).then((res) => {
 			return res.text();

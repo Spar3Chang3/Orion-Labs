@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Make about us">
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Update footer, change music to no copyright, and set up firebase for demoing">
+      <change afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BuildAndDeployWindows.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/sus.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_3_2025_11_44_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_3_2025_11_44_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/sus.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/sus.mp3" afterDir="false" />
     </list>
     <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
     <list id="43f3d7e8-3c1a-4dcf-a4f5-bde97a932620" name="Changes by trash" comment="" />
@@ -56,11 +66,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/static/assets",
+    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/public/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +84,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\public\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
+      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -116,6 +129,13 @@
       <workItem from="1736120569346" duration="12070000" />
       <workItem from="1736384183811" duration="8034000" />
       <workItem from="1736558175647" duration="2650000" />
+      <workItem from="1736966000511" duration="107000" />
+      <workItem from="1737160267812" duration="272000" />
+      <workItem from="1742086103031" duration="598000" />
+      <workItem from="1742230939299" duration="1281000" />
+      <workItem from="1743315842379" duration="464000" />
+      <workItem from="1743971933730" duration="1573000" />
+      <workItem from="1743974267417" duration="907000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -253,6 +273,7 @@
     <MESSAGE value="Add a funny to about.svelte MOBILE SUPPORT BAD" />
     <MESSAGE value="&quot;fix&quot; mobile support for about.svelte" />
     <MESSAGE value="Make Ascii art good and tweak sus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Ascii art good and tweak sus" />
+    <MESSAGE value="Update footer, change music to no copyright, and set up firebase for demoing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update footer, change music to no copyright, and set up firebase for demoing" />
   </component>
 </project>
