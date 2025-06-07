@@ -161,9 +161,7 @@
 						<br/>
 						<a href={SiteLinks.staff}>Staff</a>
 						<br/>
-						<a href={SiteLinks.sus}>amogus ඞ</a>
-						<br/>
-						<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
+						<a href={SiteLinks.csClub}>CS Club</a>
 					</Modal>
 				</div>
 			</div>
@@ -171,8 +169,8 @@
 			<div class="navigation">
 				<a href={SiteLinks.about}>About Us</a>
 				<a href={SiteLinks.staff}>Staff</a>
-				<a href={SiteLinks.sus}>amogus ඞ</a>
-				<a href={SiteLinks.fortnite}>FORTNITE!!!</a>
+				<a href={SiteLinks.sus}>Amogus ඞ</a>
+				<a href={SiteLinks.csClub}>CS Club</a>
 			</div>
 		{/if}
 	</div>

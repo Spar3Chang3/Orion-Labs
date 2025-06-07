@@ -1,19 +1,36 @@
 <script lang="js">
 	import { onMount } from 'svelte';
 	import { DataLinks } from '$lib/index.js';
+	import '$lib/index.css';
+	import Loader from '$lib/components/layout/Loader.svelte';
 
-	let aboutText = $state("");
+	let aboutText1 = $state("");
+	let aboutText2 = $state("");
 	let asciiPrint = $state("Ascii Loading...");
 	let ascii = $state([]);
 	let interval = $state();
 	let index = $state(0);
 
+	let dataLoaded = $state(false);
+
+	let prefersReducedMotion = $state();
+
 	async function  getAboutText() {
-		fetch(DataLinks.about).then((res) => {
+		fetch(DataLinks.about1).then((res) => {
 			return res.text();
 		}).then((data) => {
-			aboutText = data;
+			aboutText1 = data;
+		}).then(() => {
+			fetch(DataLinks.about2).then((res) => {
+				return res.text();
+			}).then((data) => {
+				aboutText2 = data;
+			}).then(() => {
+				dataLoaded = true;
+			});
 		});
+
+		//Is this dumb? yes. Does it work? I think so.
 	}
 
 	async function getAndParseAsciiArt() {
@@ -27,13 +44,19 @@
 	}
 
 	onMount(() => {
+		prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 		getAboutText();
 		getAndParseAsciiArt().then(() => {
-			interval = setInterval(() => {
-				asciiPrint = ascii[index];
-				index++;
-				index = (index % ascii.length);
-			}, 100);
+			if (prefersReducedMotion) {
+				asciiPrint = ascii[0];
+			} else {
+				interval = setInterval(() => {
+					asciiPrint = ascii[index];
+					index++;
+					index = (index % ascii.length);
+				}, 100);
+			}
 		});
 
 		return(() => {
@@ -82,7 +105,27 @@
 			margin: 0 auto;
 	}
 
-	.license {
+	.about-text {
+			line-height: var(--line-height-standard);
+			font-size: 1.15rem;
+	}
+
+	.text-break-img {
+			max-height: 16rem;
+			width: auto;
+			object-fit: contain;
+			margin-top: 1rem;
+	}
+
+    .text-break-lbl {
+        display: block;
+        text-align: center;
+        margin-bottom: -1rem;
+        font-size: 0.9rem;
+				color: var(--text-standard);
+    }
+
+    .license {
 			padding: 1rem;
 			z-index: 10;
 	}
@@ -133,18 +176,28 @@
 
 </style>
 <section class="about">
-	<h2>
-		About Orion Lab
-	</h2>
-	<div class="content">
-		<p class="about-text" style="white-space: pre; text-wrap: wrap">
-			{aboutText}
-		</p>
-		<div class="ascii-wrapper">
-			<p class="ascii" style="white-space: pre; text-wrap: nowrap">
-				{asciiPrint}
+
+	{#if dataLoaded}
+		<h2>
+			About Orion Lab
+		</h2>
+		<div class="content">
+			<p class="about-text {prefersReducedMotion ? '' : 'animate'}" style="white-space: pre; text-wrap: wrap;">
+				{aboutText1}
 			</p>
-			<p class="license"><a href="https://skfb.ly/oPTUp" target="_blank">"old PC low poly game model"</a> by creosine is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution.</a> <br>This model has been transformed into a gif, then into ASCII. Why? I don't know, it looks cool.</p>
+			<img id="text-break" class="text-break-img {prefersReducedMotion ? '' : 'animate'}" src="/assets/about-text-break.jpg" alt="Text breakup showing some of the Orion Lab crew" style="animation-delay: 0.15s"/>
+			<label for="text-break" class="text-break-lbl {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: 0.15s">A picture of some of the Orion Lab attendees</label>
+			<p class="about-text {prefersReducedMotion ? '' : 'animate'}" style="white-space: pre; text-wrap: wrap; animation-delay: 0.25s;">
+				{aboutText2}
+			</p>
+			<div class="ascii-wrapper {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: 0.35s">
+				<p class="ascii" style="white-space: pre; text-wrap: nowrap">
+					{asciiPrint}
+				</p>
+				<p class="license"><a href="https://skfb.ly/oPTUp" target="_blank">"old PC low poly game model"</a> by creosine is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution.</a> <br>This model has been transformed into a gif, then into ASCII. Why? I don't know, it looks cool.</p>
+			</div>
 		</div>
-	</div>
+	{:else}
+		<Loader/>
+	{/if}
 </section>

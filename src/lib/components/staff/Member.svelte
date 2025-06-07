@@ -1,6 +1,6 @@
 <script lang="js">
-
-	let { name, role, bio, portrait, url} = $props();
+	import '$lib/index.css';
+	let { name, role, bio, portrait, url, prefersReducedMotion, animationDelay } = $props();
 
 </script>
 
@@ -10,9 +10,8 @@
 			grid-template-columns: auto;
 			grid-template-rows: 1fr 1fr;
 
-			height: fit-content;
-			width: 480px;
-			max-width: 100vw;
+			height: 25rem;
+			width: 20rem;
 
 			justify-content: center;
 			justify-items: center;
@@ -45,6 +44,7 @@
 			object-fit: cover;
       border: 0.1rem solid var(--banner-accent);
 			box-shadow: 1rem 1rem var(--banner-accent);
+			margin-bottom: 0.25rem;
 	}
 
 	.portrait-container h2 {
@@ -60,14 +60,13 @@
 
       justify-content: center;
       align-items: center;
-
 	}
 	a {
 			text-decoration: none;
 	}
 </style>
 <a href={url} target="_blank">
-<div class="member">
+<div class="member {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: {prefersReducedMotion ? '0' : animationDelay}s">
 	<div class="portrait-container">
 		<img src={portrait} alt="Staff Member Portrait" />
 		<h2>{name}</h2>

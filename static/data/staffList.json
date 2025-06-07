@@ -1,5 +1,12 @@
 [
   {
+    "name": "Josh Smith",
+    "role": "Director of Orion Lab",
+    "bio": "Teacher of College Students",
+    "portrait": "/data/JoshSmith.jpg",
+    "url": "https://www.uis.edu/directory/joshua-smith"
+  },
+  {
     "name": "Daryk",
     "role": "Lead Developer",
     "bio": "Failed College Student",
@@ -15,9 +22,9 @@
   },
   {
     "name": "Brian",
-    "role": "sage",
-    "bio": "a little too old to be a college student",
-    "portrait": "/data/Edward.jpg",
+    "role": "SAGE",
+    "bio": "A little too old to be a college student",
+    "portrait": "/data/Brian.jpg",
     "url" : "https://castlecrashers.fandom.com/wiki/Blacksmith"
   }
 ]

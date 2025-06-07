@@ -1,10 +1,9 @@
 export const SiteLinks = {
 	landingPage: '/landing-page',
 	sus: '/sus',
-	fortnite: '/fortnite',
 	about: '/about',
-	staff: '/staff'
-
+	staff: '/staff',
+	csClub: 'http://uiscs.club/'
 }
 
 export const IconLinks = {
@@ -46,7 +45,8 @@ export const VideoLinks = {
 //The links in here are majorly temporary
 export const DataLinks = {
 	staff: '/data/staffList.json',
-	about: '/data/aboutUs.txt',
+	about1: '/data/aboutUs1.txt',
+	about2: '/data/aboutUs2.txt',
 	ascii: '/data/trimmedascii-gif.txt',
 	asciiart: '/data/ascii.txt'
 }

@@ -1,8 +1,13 @@
 <script lang="js">
+    import { onMount } from 'svelte';
     import { VideoLinks, SiteLinks } from '$lib/index.js';
+    import '$lib/index.css';
 
-    let {isMobile = false} = $props();
+    let prefersReducedMotion = $state();
 
+    onMount(() => {
+        prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    });
 </script>
 <style lang="css">
     .landing-page {
@@ -33,6 +38,7 @@
 
     .intro p, .outro p {
         line-height: var(--line-height-standard);
+        font-size: 1.15rem;
     }
 
     .intro h2, .outro h2 {
@@ -57,7 +63,6 @@
         justify-content: center;
         align-items: center;
     }
-
     .promotion-video video {
         position: absolute;
         height: 100%;
@@ -85,6 +90,19 @@
         z-index: 2;
     }
 
+    .hero-blur {
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px); /* Safari support */
+
+        background-color: rgba(0, 115, 230, 0.25); /* semi-transparent for contrast */
+        padding: 2rem 3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .hero-blur {
+            padding: 1.25rem 1.5rem;
+        }
+    }
 </style>
 
 <section class="landing-page">
@@ -98,7 +116,7 @@
             <source src={VideoLinks.printer} type="video/mp4" />
         </video>
         <a href={SiteLinks.about} class="promotion-text">
-            <p>Infinite Opportunity</p>
+            <p class="hero-blur">Infinite Opportunity</p>
         </a>
     </div>
 
@@ -107,7 +125,7 @@
             <source src={VideoLinks.people} type="video/mp4" />
         </video>
         <a href={SiteLinks.staff} class="promotion-text">
-            <p>Passionate People</p>
+            <p class="hero-blur">Passionate People</p>
         </a>
     </div>
 
@@ -116,7 +134,7 @@
             <source src={VideoLinks.teaching} type="video/mp4" />
         </video>
         <div class="promotion-text">
-            <p>Actual Answers</p>
+            <p class="hero-blur">Actual Answers</p>
         </div>
     </div>
 

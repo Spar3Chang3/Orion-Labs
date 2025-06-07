@@ -5,19 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Update footer, change music to no copyright, and set up firebase for demoing">
-      <change afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuildAndDeployWindows.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/sus.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_3_2025_11_44_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_3_2025_11_44_PM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/layout/Loader.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/about-text-break.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/data/Brian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/data/JoshSmith.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/data/aboutUs1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/sus.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/sus.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/fortnite/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/nunja/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/3d-print-broll.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/3d-print-broll.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/people-broll.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/people-broll.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/Daryk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/Daryk.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/Edward.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/Edward.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/aboutUs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/aboutUs2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/staffList.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/staffList.json" afterDir="false" />
     </list>
+    <list id="26aba7e8-4223-4119-bacb-1818807624e7" name="Changes by edward" comment="" />
     <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
     <list id="43f3d7e8-3c1a-4dcf-a4f5-bde97a932620" name="Changes by trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +47,8 @@
         <option value="Modal" />
         <option value="+layout" />
         <option value="+error.svelte" />
+        <option value="CSS File" />
+        <option value="Loader" />
       </list>
     </option>
   </component>
@@ -51,7 +64,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Spar3Chang3/Orion-Labs.git&quot;,
-    &quot;accountId&quot;: &quot;7398f066-a024-4eda-a6df-e25fa531bd3e&quot;
+    &quot;accountId&quot;: &quot;3da56e3b-5813-4efe-b712-efea1af736b7&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -59,7 +72,6 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2qsyOUegIkhRBcN4eBLw6pn5Kpw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,23 +83,25 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/trash/WebstormProjects/Orion-Labs/public/assets",
+    "last_opened_file_path": "/home/dbaker/WebstormProjects/Orion-Labs/static/data",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Development\\Editors\\JetBrains\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "/opt/jetbrains/WebStorm-251.23774.424/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/data" />
+      <recent name="$PROJECT_DIR$/static/assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\public\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs" />
-      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
@@ -99,7 +113,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -136,6 +150,8 @@
       <workItem from="1743315842379" duration="464000" />
       <workItem from="1743971933730" duration="1573000" />
       <workItem from="1743974267417" duration="907000" />
+      <workItem from="1749248737267" duration="4540000" />
+      <workItem from="1749253400625" duration="4430000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />

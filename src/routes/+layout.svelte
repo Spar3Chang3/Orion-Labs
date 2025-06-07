@@ -1,3 +1,46 @@
+<svelte:head>
+    <!-- Prefetch images -->
+    <link rel="prefetch" href="/assets/about-text-break.jpg" as="image" />
+    <link rel="prefetch" href="/assets/alert.png" as="image" />
+    <link rel="prefetch" href="/assets/among-us.svg" as="image" />
+    <link rel="prefetch" href="/assets/crewmate.png" as="image" />
+    <link rel="prefetch" href="/assets/fortnite.jpg" as="image" />
+    <link rel="prefetch" href="/assets/github-logo-dark.svg" as="image" />
+    <link rel="prefetch" href="/assets/github-logo-light.svg" as="image" />
+    <link rel="prefetch" href="/assets/google-maps-logo.svg" as="image" />
+    <link rel="prefetch" href="/assets/discord-logo.svg" as="image" />
+    <link rel="prefetch" href="/assets/alert-triangle.svg" as="image" />
+    <link rel="prefetch" href="/assets/orion-lab-logo-dark.svg" as="image" />
+    <link rel="prefetch" href="/assets/orion-lab-logo-light.svg" as="image" />
+    <link rel="prefetch" href="/assets/uis-logo-dark.svg" as="image" />
+    <link rel="prefetch" href="/assets/uis-logo-light.svg" as="image" />
+    <link rel="prefetch" href="/assets/sus.png" as="image" />
+
+    <!-- Prefetch video -->
+    <link rel="prefetch" href="/assets/3d-print-broll.mp4" as="video" />
+    <link rel="prefetch" href="/assets/people-broll.mp4" as="video" />
+    <link rel="prefetch" href="/assets/teaching-broll.mp4" as="video" />
+
+    <!-- Prefetch audio -->
+    <link rel="prefetch" href="/assets/nope-wrong.mp3" as="audio" />
+    <link rel="prefetch" href="/assets/sus.mp3" as="audio" />
+    <link rel="prefetch" href="/assets/yippee.mp3" as="audio" />
+
+    <!-- Prefetch text/data -->
+    <link rel="prefetch" href="/data/aboutUs1.txt" as="fetch" />
+    <link rel="prefetch" href="/data/aboutUs2.txt" as="fetch" />
+    <link rel="prefetch" href="/data/staffList.json" as="fetch" />
+    <link rel="prefetch" href="/data/trimmedascii-gif.txt" as="fetch" />
+
+    <!-- Prefetch portraits -->
+    <link rel="prefetch" href="/data/Daryk.jpg" as="image" />
+    <link rel="prefetch" href="/data/Edward.jpg" as="image" />
+    <link rel="prefetch" href="/data/JoshSmith.jpg" as="image" />
+    <link rel="prefetch" href="/data/Brian.jpg" as="image" />
+
+    <!-- Prefetch font -->
+    <link rel="prefetch" href="/fonts/cringe.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+</svelte:head>
 <script lang="js">
     import Header from '$lib/components/layout/Header.svelte';
     import Footer from '$lib/components/layout/Footer.svelte';
@@ -8,9 +51,6 @@
     let isMobile = $state(false);
     let prefersDarkMode = $state(false);
 
-    //Stolen from Claude? Perhaps. But I understand it and didn't want to write it all out
-    //creates a query, then an event listener to change when updated
-    //I may be able to just do this from $derived, but eh this works
     function setupMediaListeners() {
         const mobileQuery = window.matchMedia('(max-width: 768px)');
         const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -59,11 +99,11 @@
 
         --text-standard: #000000;
         --hyperlink: #c8b18b;
-        --line-height-standard: 1.5rem;
+        --line-height-standard: 1.75rem;
         --font-standard: sans-serif;
         --font-special: Hacked, sans-serif;
 
-        --banner-text-size: 2rem;
+        --banner-text-size: 2.5rem;
 
 
         overflow-x: hidden;
@@ -96,7 +136,7 @@
 </header>
 <main class="adaptive">
     {#if children}
-        {@render children({ isMobile })}
+        {@render children()}
     {:else}
         <p>502</p>
     {/if}
