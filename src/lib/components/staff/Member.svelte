@@ -8,7 +8,7 @@
 	.member {
 			display: grid;
 			grid-template-columns: auto;
-			grid-template-rows: 1fr 1fr;
+			grid-template-rows: 2fr 1fr;
 
 			height: 25rem;
 			width: 20rem;
@@ -39,8 +39,8 @@
   }
 
 	.portrait-container img {
-			height: 128px;
-			width: 128px;
+			height: 164px;
+			width: 164px;
 			object-fit: cover;
       border: 0.1rem solid var(--banner-accent);
 			box-shadow: 1rem 1rem var(--banner-accent);

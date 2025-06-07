@@ -52,6 +52,7 @@
     .intro p, h2, .outro p, h2 {
         padding-left: 2rem;
         padding-right: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .promotion-video {
