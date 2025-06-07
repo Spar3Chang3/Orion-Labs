@@ -106,41 +106,46 @@
     }
 </style>
 
-<section class="landing-page">
-    <div class="intro">
-        <h2>Where Innovation Meets Collaboration</h2>
-        <p>Welcome to the University of Illinois-Springfield's (UIS) Computer Science Department, home to the cutting-edge Orion Lab. Since its grand opening in January 2023, the Orion Lab has been fostering a vibrant hub of research, education, and recreation, conveniently nestled in the lower level of the Health and Sciences Building (HSB). As a dynamic space designed to adapt to the evolving needs of our esteemed UIS community, the Orion Lab is poised to ignite endless possibilities.&nbsp; </p>
+<section class="landing-page" aria-label="Landing page for the Orion Lab at UIS">
+    <div class="intro" aria-label="Introduction section">
+        <h2 aria-label="Section heading">Where Innovation Meets Collaboration</h2>
+        <p aria-label="Introductory description">
+            Welcome to the University of Illinois-Springfield's (UIS) Computer Science Department, home to the cutting-edge Orion Lab. Since its grand opening in January 2023, the Orion Lab has been fostering a vibrant hub of research, education, and recreation, conveniently nestled in the lower level of the Health and Sciences Building (HSB). As a dynamic space designed to adapt to the evolving needs of our esteemed UIS community, the Orion Lab is poised to ignite endless possibilities.
+        </p>
     </div>
 
-    <div class="promotion-video">
-        <video autoplay muted loop playsinline>
+    <div class="promotion-video" aria-label="Promotional video: Infinite Opportunity">
+        <video autoplay muted loop playsinline aria-hidden="true">
             <source src={VideoLinks.printer} type="video/mp4" />
         </video>
-        <a href={SiteLinks.about} class="promotion-text">
-            <p class="hero-blur">Infinite Opportunity</p>
+        <a href={SiteLinks.about} class="promotion-text" aria-label="Learn more about the Orion Lab">
+            <p class="hero-blur" aria-label="Promotional message">Infinite Opportunity</p>
         </a>
     </div>
 
-    <div class="promotion-video">
-        <video autoplay muted loop playsinline>
+    <div class="promotion-video" aria-label="Promotional video: Passionate People">
+        <video autoplay muted loop playsinline aria-hidden="true">
             <source src={VideoLinks.people} type="video/mp4" />
         </video>
-        <a href={SiteLinks.staff} class="promotion-text">
-            <p class="hero-blur">Passionate People</p>
+        <a href={SiteLinks.staff} class="promotion-text" aria-label="Meet the Orion Lab staff">
+            <p class="hero-blur" aria-label="Promotional message">Passionate People</p>
         </a>
     </div>
 
-    <div class="promotion-video">
-        <video autoplay muted loop playsinline>
+    <div class="promotion-video" aria-label="Promotional video: Actual Answers">
+        <video autoplay muted loop playsinline aria-hidden="true">
             <source src={VideoLinks.teaching} type="video/mp4" />
         </video>
-        <div class="promotion-text">
-            <p class="hero-blur">Actual Answers</p>
+        <div class="promotion-text" aria-label="Highlight: Actual Answers">
+            <p class="hero-blur" aria-label="Promotional message">Actual Answers</p>
         </div>
     </div>
 
-    <div class="outro">
-        <h2>Visit Us</h2>
-        <p>Even if you don't want to join, drop by and say hi. Orion Lab offers something for everyone, whether that be friends, fun, or fictional doomsday plans</p>
+    <div class="outro" aria-label="Closing message section">
+        <h2 aria-label="Section heading">Visit Us</h2>
+        <p aria-label="Closing invitation">
+            Even if you don't want to join, drop by and say hi. Orion Lab offers something for everyone, whether that be friends, fun, or fictional doomsday plans
+        </p>
     </div>
 </section>
+

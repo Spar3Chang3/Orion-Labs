@@ -65,15 +65,15 @@
 			text-decoration: none;
 	}
 </style>
-<a href={url} target="_blank">
-<div class="member {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: {prefersReducedMotion ? '0' : animationDelay}s">
-	<div class="portrait-container">
-		<img src={portrait} alt="Staff Member Portrait" />
-		<h2>{name}</h2>
+<a href={url} target="_blank" aria-label={`View more about ${name}, ${role}`}>
+	<div class="member {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: {prefersReducedMotion ? '0' : animationDelay}s" role="group" aria-label={`${name}, ${role}`}>
+		<div class="portrait-container" aria-label={`${name}'s portrait`}>
+			<img src={portrait} alt={`Portrait of ${name}`} />
+			<h2 aria-label="Staff name">{name}</h2>
+		</div>
+		<div class="content" aria-label="Staff details">
+			<h3 aria-label="Role">{role}</h3>
+			<p aria-label="Biography">{bio}</p>
+		</div>
 	</div>
-	<div class="content">
-		<h3>{role}</h3>
-		<p>{bio}</p>
-	</div>
-</div>
 </a>

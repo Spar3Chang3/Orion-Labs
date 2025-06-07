@@ -67,15 +67,23 @@
 	}
 </style>
 
-<section class="staff">
+<section class="staff" aria-label="Staff listing section">
 	{#if dataLoaded}
-		<h2>Staff Members</h2>
-		<div class="content">
+		<h2 aria-label="Section heading">Staff Members</h2>
+		<div class="content" aria-label="List of staff members">
 			{#each staff as member, index}
-				<Member name={member.name} role={member.role} bio={member.bio} portrait={member.portrait} url={member.url} prefersReducedMotion={prefersReducedMotion} animationDelay={0.1 * index} />
+				<Member
+					name={member.name}
+					role={member.role}
+					bio={member.bio}
+					portrait={member.portrait}
+					url={member.url}
+					prefersReducedMotion={prefersReducedMotion}
+					animationDelay={0.1 * index}
+				/>
 			{/each}
 		</div>
 	{:else}
-		<Loader/>
+		<Loader aria-label="Loading staff members" />
 	{/if}
 </section>

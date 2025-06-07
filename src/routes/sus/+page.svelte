@@ -102,6 +102,19 @@
 </script>
 
 <style lang="css">
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
 		.sus {
 				/*Force light background for the sanctity of the effect in dark mode.*/
 				background-color: #FFFFFF;
@@ -158,6 +171,10 @@
 				cursor: pointer;
 		}
 </style>
+
+<p class="sr-only" role="alert">
+	This page is a visual mini-game and requires eyesight to interact. Please return to the main site for accessible content.
+</p>
 
 <section class="sus">
 	<div class="find-me" style:transform="translate({transX}vw, {transY}vh)" style:scale="1.1">

@@ -143,34 +143,49 @@
 
 </style>
 
-<section class="relative-navbar">
+<section class="relative-navbar" role="navigation" aria-label="Main site navigation">
 	<div class="fixed-navbar">
 		<div class="portrait-container">
-			<a href={SiteLinks.landingPage} >
-				<img src={orionLabLogo} alt="Orion Labs Logo">
+			<a href={SiteLinks.landingPage} aria-label="Navigate to Orion Labs home page">
+				<img src={orionLabLogo} alt="Orion Labs Logo" />
 			</a>
 		</div>
+
 		{#if isMobile}
 			<div class="navigation">
 				<div class="button-container">
-					<button class="nav-vis-button" onclick={changeModalState}>☰</button>
+					<button
+						class="nav-vis-button"
+						onclick={changeModalState}
+						aria-label="Toggle navigation menu"
+						aria-haspopup="true"
+						aria-expanded={isModalOpen}
+					>
+						☰
+					</button>
 				</div>
-				<div class="navigation-modal">
-					<Modal bind:isOpen={isModalOpen} title={"I LOVE PENGIS"} showExitButton={false} showTitle={false}>
-						<a href={SiteLinks.about}>About Us</a>
-						<br/>
-						<a href={SiteLinks.staff}>Staff</a>
-						<br/>
-						<a href={SiteLinks.csClub}>CS Club</a>
+				<div class="navigation-modal" aria-hidden={!isModalOpen}>
+					<Modal
+						bind:isOpen={isModalOpen}
+						title="Navigation Menu"
+						aria-label="Mobile navigation menu"
+						showExitButton={false}
+						showTitle={false}
+					>
+						<a href={SiteLinks.about} aria-label="Navigate to About Us page">About Us</a>
+						<br />
+						<a href={SiteLinks.staff} aria-label="Navigate to Staff page">Staff</a>
+						<br />
+						<a href={SiteLinks.csClub} aria-label="Navigate to Computer Science Club page">CS Club</a>
 					</Modal>
 				</div>
 			</div>
 		{:else}
-			<div class="navigation">
-				<a href={SiteLinks.about}>About Us</a>
-				<a href={SiteLinks.staff}>Staff</a>
-				<a href={SiteLinks.sus}>Amogus ඞ</a>
-				<a href={SiteLinks.csClub}>CS Club</a>
+			<div class="navigation" role="menubar" aria-label="Main navigation links">
+				<a href={SiteLinks.about} aria-label="Navigate to About Us page">About Us</a>
+				<a href={SiteLinks.staff} aria-label="Navigate to Staff page">Staff</a>
+				<a href={SiteLinks.sus} aria-label="Play the Amogus visual game">Amogus ඞ</a>
+				<a href={SiteLinks.csClub} aria-label="Navigate to Computer Science Club page">CS Club</a>
 			</div>
 		{/if}
 	</div>

@@ -25,8 +25,14 @@
   }
 
 </style>
-<div class="load-container">
-	<svg class="loader" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" fill="none">
+<div class="load-container" role="status" aria-live="polite" aria-label="Loading content">
+	<svg
+		class="loader"
+		viewBox="0 0 50 50"
+		xmlns="http://www.w3.org/2000/svg"
+		fill="none"
+		aria-hidden="true"
+	>
 		<circle
 			cx="25"
 			cy="25"
@@ -34,7 +40,6 @@
 			stroke-width="5"
 			stroke-linecap="round"
 			stroke-dasharray="90 150"
-		>
-		</circle>
+		/>
 	</svg>
 </div>

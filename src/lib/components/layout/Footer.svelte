@@ -103,26 +103,33 @@
 	}
 </style>
 
-<section class="footer">
-	<div class="copyright">
-		<p>&copy; {currentYear} Orion Labs - All Rights Thought About <br> This site is available for viewing at <a href={SocialLinks.github}>GitHub.com</a></p>
+<section class="footer" role="contentinfo" aria-label="Site footer with copyright and social media">
+	<div class="copyright" aria-label="Copyright and repository link">
+		<p>
+			&copy; {currentYear} Orion Labs – All Rights Thought About
+			<br />
+			This site is available for viewing at
+			<a href={SocialLinks.github} target="_blank" aria-label="View site source on GitHub">
+				GitHub.com
+			</a>
+		</p>
 	</div>
-	<div class="social-shelf">
 
-		<a href={SocialLinks.github} target="_blank">
-			<img src={githubLogo} alt="Github Logo"/>
+	<div class="social-shelf" role="navigation" aria-label="Social media links">
+		<a href={SocialLinks.github} target="_blank" aria-label="Orion Labs GitHub profile">
+			<img src={githubLogo} alt="GitHub Logo" />
 		</a>
 
-		<a href={SocialLinks.discord} target="_blank">
-			<img src={IconLinks.discord} alt="Discord Logo"/>
+		<a href={SocialLinks.discord} target="_blank" aria-label="Join Orion Labs on Discord">
+			<img src={IconLinks.discord} alt="Discord Logo" />
 		</a>
 
-		<a href={SocialLinks.gmaps} target="_blank">
-			<img src={IconLinks.gmaps} alt="Google Maps"/>
+		<a href={SocialLinks.gmaps} target="_blank" aria-label="View Orion Labs on Google Maps">
+			<img src={IconLinks.gmaps} alt="Google Maps Logo" />
 		</a>
 
-		<a href={SocialLinks.uishome} target="_blank">
-			<img src={uisLogo} alt="UIS Home" />
+		<a href={SocialLinks.uishome} target="_blank" aria-label="Visit University of Illinois Springfield homepage">
+			<img src={uisLogo} alt="UIS Logo" />
 		</a>
 	</div>
 </section>

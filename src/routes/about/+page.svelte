@@ -175,29 +175,72 @@
 	}
 
 </style>
-<section class="about">
-
+<section class="about" aria-label="About Orion Lab section">
 	{#if dataLoaded}
-		<h2>
+		<h2 aria-label="Section heading: About Orion Lab">
 			About Orion Lab
 		</h2>
-		<div class="content">
-			<p class="about-text {prefersReducedMotion ? '' : 'animate'}" style="white-space: pre; text-wrap: wrap;">
+		<div class="content" aria-label="About Orion Lab content">
+			<p
+				class="about-text {prefersReducedMotion ? '' : 'animate'}"
+				style="white-space: pre; text-wrap: wrap;"
+				aria-label="Introduction paragraph"
+			>
 				{aboutText1}
 			</p>
-			<img id="text-break" class="text-break-img {prefersReducedMotion ? '' : 'animate'}" src="/assets/about-text-break.jpg" alt="Text breakup showing some of the Orion Lab crew" style="animation-delay: 0.15s"/>
-			<label for="text-break" class="text-break-lbl {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: 0.15s">A picture of some of the Orion Lab attendees</label>
-			<p class="about-text {prefersReducedMotion ? '' : 'animate'}" style="white-space: pre; text-wrap: wrap; animation-delay: 0.25s;">
+
+			<img
+				id="text-break"
+				class="text-break-img {prefersReducedMotion ? '' : 'animate'}"
+				src="/assets/about-text-break.jpg"
+				alt="Group photo of Orion Lab attendees"
+				aria-describedby="img-label"
+				style="animation-delay: 0.15s"
+			/>
+
+			<label
+				id="img-label"
+				for="text-break"
+				class="text-break-lbl {prefersReducedMotion ? '' : 'animate'}"
+				style="animation-delay: 0.15s"
+			>
+				A picture of some of the Orion Lab attendees
+			</label>
+
+			<p
+				class="about-text {prefersReducedMotion ? '' : 'animate'}"
+				style="white-space: pre; text-wrap: wrap; animation-delay: 0.25s;"
+				aria-label="Additional paragraph about Orion Lab"
+			>
 				{aboutText2}
 			</p>
-			<div class="ascii-wrapper {prefersReducedMotion ? '' : 'animate'}" style="animation-delay: 0.35s">
-				<p class="ascii" style="white-space: pre; text-wrap: nowrap">
+
+			<div
+				class="ascii-wrapper {prefersReducedMotion ? '' : 'animate'}"
+				style="animation-delay: 0.35s"
+				role="region"
+				aria-label="ASCII animation area"
+			>
+				<p
+					class="ascii"
+					style="white-space: pre; text-wrap: nowrap"
+					aria-label="ASCII art animation"
+				>
 					{asciiPrint}
 				</p>
-				<p class="license"><a href="https://skfb.ly/oPTUp" target="_blank">"old PC low poly game model"</a> by creosine is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution.</a> <br>This model has been transformed into a gif, then into ASCII. Why? I don't know, it looks cool.</p>
+				<p class="license" aria-label="License information">
+					<a href="https://skfb.ly/oPTUp" target="_blank" aria-label="3D model link: old PC low poly game model">
+						"old PC low poly game model"
+					</a> by creosine is licensed under
+					<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" aria-label="Creative Commons Attribution license">
+						Creative Commons Attribution
+					</a>.
+					<br />
+					This model has been transformed into a gif, then into ASCII. Why? I don't know, it looks cool.
+				</p>
 			</div>
 		</div>
 	{:else}
-		<Loader/>
+		<Loader aria-label="Loading about page content" />
 	{/if}
 </section>

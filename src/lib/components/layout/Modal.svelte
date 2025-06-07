@@ -28,18 +28,20 @@
 		onclick={handleOutsideClick}
 		onkeydown={handleOutsideClick}
 		role="tabpanel"
+		aria-labelledby={showTitle ? "modal-title" : undefined}
+		aria-label={!showTitle ? title : undefined}
 		tabindex="0"
 	>
 		<div class="modal">
 			{#if showTitle}
 				<div class="modal-header">
-					<h2>{title}</h2>
+					<h2 aria-label="Modal Title: {title}" aria-hidden="{showTitle}">{title}</h2>
 					{#if showExitButton}
-						<button class="close-button" onclick={closeModal}>×</button>
+						<button class="close-button" onclick={closeModal} aria-label="Close modal">×</button>
 					{/if}
 				</div>
 			{/if}
-			<div class="modal-content">
+			<div class="modal-content" aria-label="Modal Content">
 				{@render children()}
 			</div>
 		</div>
