@@ -36,7 +36,7 @@
     <link rel="prefetch" href="/data/Daryk.jpg" as="image" />
     <link rel="prefetch" href="/data/Edward.jpg" as="image" />
     <link rel="prefetch" href="/data/JoshSmith.jpg" as="image" />
-    <link rel="prefetch" href="/data/Brian.jpg" as="image" />
+    <link rel="prefetch" href="/data/brian2.jpg" as="image" />
 
     <!-- Prefetch font -->
     <link rel="prefetch" href="/fonts/cringe.ttf" as="font" type="font/ttf" crossorigin="anonymous" />

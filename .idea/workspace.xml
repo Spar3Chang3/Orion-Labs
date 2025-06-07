@@ -4,32 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Update footer, change music to no copyright, and set up firebase for demoing">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/layout/Loader.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/about-text-break.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/Brian.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/JoshSmith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/aboutUs1.txt" afterDir="false" />
+    <list default="true" id="cef3eb33-373b-4329-8d35-e05b57823add" name="Changes" comment="Add prefers-reduced-motion queries, update styling, make everything look neat, add loading">
+      <change afterPath="$PROJECT_DIR$/static/assets/brian2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/layout/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/staff/Member.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/fortnite/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/landing-page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/nunja/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/staff/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/staff/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/3d-print-broll.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/3d-print-broll.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/people-broll.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/people-broll.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/Daryk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/Daryk.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/Edward.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/Edward.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/aboutUs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/aboutUs2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/staffList.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/staffList.json" afterDir="false" />
     </list>
-    <list id="26aba7e8-4223-4119-bacb-1818807624e7" name="Changes by edward" comment="" />
     <list id="4b6756d5-5808-4f77-82b2-81404911bd00" name="Changes by Edward" comment="Add the smallest thing to README.md" />
+    <list id="26aba7e8-4223-4119-bacb-1818807624e7" name="Changes by edward" comment="" />
     <list id="43f3d7e8-3c1a-4dcf-a4f5-bde97a932620" name="Changes by trash" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/dbaker/WebstormProjects/Orion-Labs/static/data",
+    "last_opened_file_path": "/home/dbaker/WebstormProjects/Orion-Labs/static/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,11 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/data" />
       <recent name="$PROJECT_DIR$/static/assets" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/static/data" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\public\assets" />
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
-      <recent name="C:\Users\trash\WebstormProjects\Orion-Labs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\trash\WebstormProjects\Orion-Labs\static\assets" />
@@ -151,7 +133,7 @@
       <workItem from="1743971933730" duration="1573000" />
       <workItem from="1743974267417" duration="907000" />
       <workItem from="1749248737267" duration="4540000" />
-      <workItem from="1749253400625" duration="4430000" />
+      <workItem from="1749253400625" duration="5060000" />
     </task>
     <task id="LOCAL-00001" summary="Nuke bad first attempt">
       <option name="closed" value="true" />
@@ -257,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736139277302</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add prefers-reduced-motion queries, update styling, make everything look neat, add loading">
+      <option name="closed" value="true" />
+      <created>1749257921267</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749257921267</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +280,7 @@
     <MESSAGE value="&quot;fix&quot; mobile support for about.svelte" />
     <MESSAGE value="Make Ascii art good and tweak sus" />
     <MESSAGE value="Update footer, change music to no copyright, and set up firebase for demoing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update footer, change music to no copyright, and set up firebase for demoing" />
+    <MESSAGE value="Add prefers-reduced-motion queries, update styling, make everything look neat, add loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add prefers-reduced-motion queries, update styling, make everything look neat, add loading" />
   </component>
 </project>
