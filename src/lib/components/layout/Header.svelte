@@ -120,7 +120,7 @@
 					width: 6vh;
 
 					background-color: var(--banner-standard);
-          color:whitesmoke;
+          color: whitesmoke;
 					border: 0.1vh solid var(--banner-accent);
 					transition: 50ms ease;
 			}
@@ -128,6 +128,21 @@
 					background-color: var(--banner-accent);
 					transform: scale(0.90);
       }
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+			.navigation a:hover {
+					animation: none;
+					color: var(--banner-accent);
+			}
+
+			.nav-vis-button {
+					transition: none;
+					&:active {
+							background-color: var(--banner-accent);
+							transform: none;
+					}
+			}
 	}
 
 	@keyframes glitch {

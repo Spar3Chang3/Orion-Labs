@@ -95,6 +95,12 @@
     }
 
     .close-button:hover {
-        opacity: 0.7;
+        color: var(--banner-accent);
     }
+
+		@media (prefers-reduced-motion: reduce) {
+				.modal-backdrop {
+						transition: none;
+				}
+		}
 </style>

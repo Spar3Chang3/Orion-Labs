@@ -3,10 +3,14 @@
     import { VideoLinks, SiteLinks } from '$lib/index.js';
     import '$lib/index.css';
 
-    let prefersReducedMotion = $state();
+    let prefersReducedMotion = $state(false);
+    let prefersContrast = $state(false);
 
     onMount(() => {
-        prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        prefersContrast = window.matchMedia("(prefers-contrast: more)").matches;
+
+        console.log(prefersReducedMotion);
     });
 </script>
 <style lang="css">
@@ -32,7 +36,6 @@
         background-color: var(--banner-standard);
         color: whitesmoke;
         font-family: var(--font-standard);
-        padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
@@ -115,29 +118,29 @@
     </div>
 
     <div class="promotion-video" aria-label="Promotional video: Infinite Opportunity">
-        <video autoplay muted loop playsinline aria-hidden="true">
+        <video autoplay="{!prefersReducedMotion}" muted loop playsinline aria-hidden="true">
             <source src={VideoLinks.printer} type="video/mp4" />
         </video>
         <a href={SiteLinks.about} class="promotion-text" aria-label="Learn more about the Orion Lab">
-            <p class="hero-blur" aria-label="Promotional message">Infinite Opportunity</p>
+            <p class="hero-blur" aria-label="Promotional message" style="{prefersContrast ? 'background-color: var(--banner-accent)' : ''}">Infinite Opportunity</p>
         </a>
     </div>
 
     <div class="promotion-video" aria-label="Promotional video: Passionate People">
-        <video autoplay muted loop playsinline aria-hidden="true">
+        <video autoplay="{!prefersReducedMotion}" muted loop playsinline aria-hidden="true">
             <source src={VideoLinks.people} type="video/mp4" />
         </video>
         <a href={SiteLinks.staff} class="promotion-text" aria-label="Meet the Orion Lab staff">
-            <p class="hero-blur" aria-label="Promotional message">Passionate People</p>
+            <p class="hero-blur" aria-label="Promotional message" style="{prefersContrast ? 'background-color: var(--banner-accent)' : ''}">Passionate People</p>
         </a>
     </div>
 
     <div class="promotion-video" aria-label="Promotional video: Actual Answers">
-        <video autoplay muted loop playsinline aria-hidden="true">
+        <video autoplay="{!prefersReducedMotion}" muted loop playsinline aria-hidden="true">
             <source src={VideoLinks.teaching} type="video/mp4" />
         </video>
         <div class="promotion-text" aria-label="Highlight: Actual Answers">
-            <p class="hero-blur" aria-label="Promotional message">Actual Answers</p>
+            <p class="hero-blur" aria-label="Promotional message" style="{prefersContrast ? 'background-color: var(--banner-accent)' : ''}">Actual Answers</p>
         </div>
     </div>
 

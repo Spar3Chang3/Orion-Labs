@@ -101,6 +101,16 @@
 			}
 
 	}
+
+		@media (prefers-reduced-motion: reduce) {
+				.social-shelf a > img {
+						transition: none;
+				}
+
+				.social-shelf a > img:hover {
+						transform: none;
+				}
+		}
 </style>
 
 <section class="footer" role="contentinfo" aria-label="Site footer with copyright and social media">
